@@ -1,0 +1,7 @@
+pybamm
+matplotlib
+pandas
+optuna
+nicegui
+pytest
+scikit-learn

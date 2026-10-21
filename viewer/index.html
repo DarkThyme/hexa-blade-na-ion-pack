@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hexa-Blade Charging Lab</title>
+  <link data-trunk rel="rust" data-wasm-opt="s" />
+  <link data-trunk rel="copy-dir" href="../web_data" />
+  <style>
+    html, body { margin: 0; height: 100%; background: #05070d; overflow: hidden; }
+    canvas#bevy { width: 100%; height: 100%; display: block; outline: none; }
+    #loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+               color: #7dd3fc; font: 15px system-ui, sans-serif; letter-spacing: .08em; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div id="loading">LOADING HEXA-BLADE…</div>
+  <canvas id="bevy"></canvas>
+  <script>
+    // hide the loading label once the wasm app has taken over the canvas
+    const obs = new MutationObserver(() => {
+      const c = document.getElementById('bevy');
+      if (c && c.width > 0) { document.getElementById('loading').remove(); obs.disconnect(); }
+    });
+    obs.observe(document.getElementById('bevy'), { attributes: true });
+  </script>
+</body>
+</html>

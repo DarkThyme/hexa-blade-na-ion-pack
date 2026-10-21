@@ -1,0 +1,49 @@
+# --- environments, caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+
+# --- build outputs (Rust / WebAssembly viewer)
+viewer/target/
+viewer/dist/
+
+# --- raw third-party data: EVBattery is CC BY-NC-SA and 1.4 GB; download it separately
+#     (He et al. 2022, arXiv:2201.12358) into external_data/evbattery/
+external_data/evbattery/
+# derived from EVBattery, so the same non-commercial share-alike licence applies;
+# regenerate with analysis/evbattery/analyze.py
+analysis/evbattery/features.npz
+
+# --- regenerable simulation output
+# python -m ev_pack.export
+web_data/
+# analysis/estimator/generate.py, generate_step.py, closed_loop.py --preset rollout
+analysis/estimator/data/
+analysis/estimator/data_step/
+analysis/estimator/data_rollout/
+# python -m ev_pack.charge_maps --plateau-d-factor ...
+ev_pack/data/na_cell_maps_plateau*.npz
+
+# --- logs and local tool settings
+*.log
+.claude/
+~$*.docx
+
+# --- third-party datasets: download them yourself (see README "Data sources")
+external_data/
+
+# --- raw run logs and recorded sessions: attached to the GitHub release as hexa-blade-run-logs-v1.0.zip
+#     (the REPORT.md files and figures are built from them)
+analysis/**/*.jsonl
+analysis/matrix/results.json
+analysis/robustness/results.json
+analysis/estimator/base_profiles.json
+# identical copies of the files in analysis/estimator/v1/ (the v1 run wrote them here first)
+analysis/estimator/ml_model.pkl
+analysis/estimator/openloop.json
+analysis/estimator/openloop_traces.json
+
+# --- Word export side files
+docs/*.refreshed.docx

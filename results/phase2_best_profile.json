@@ -1,0 +1,28 @@
+{
+  "cell": "LG M50 21700 (Chen2020), 5 Ah",
+  "model": "SPMe + lumped thermal",
+  "window": "10% -> 80% SOC",
+  "limits": {
+    "peak_temp_c": 45.0,
+    "anode_potential_v_min": 0.0
+  },
+  "baseline_cccv": {
+    "c_rate": 0.8,
+    "time_to_80_min": 52.72,
+    "peak_temp_c": 33.87,
+    "min_anode_potential_mv": 2.2
+  },
+  "optimized": {
+    "c_rates_per_soc_bin": [
+      1.426,
+      1.413,
+      1.394,
+      1.034,
+      0.922
+    ],
+    "time_to_80_min": 35.77,
+    "peak_temp_c": 44.04,
+    "min_anode_potential_mv": 0.8
+  },
+  "time_saved_min": 16.95
+}

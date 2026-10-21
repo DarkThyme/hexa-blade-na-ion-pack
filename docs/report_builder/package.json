@@ -1,0 +1,8 @@
+{
+  "name": "hexa-blade-report-builder",
+  "private": true,
+  "description": "Builds docs/Hexa-Blade_Project_Report.docx from the project's result files",
+  "dependencies": {
+    "docx": "9.5.1"
+  }
+}

@@ -1,0 +1,5 @@
+c_rate,time_to_80pct_min,temp_at_80pct_c,peak_temp_c,total_time_min,final_soc,exceeds_limit,completed
+0.5,84.0,29.0,29.2,133.2,1.012,False,True
+1.0,43.2,36.3,37.6,90.0,1.012,False,True
+2.0,26.5,47.3,60.3,72.2,1.012,True,True
+3.0,25.3,53.6,73.9,70.6,1.013,True,True

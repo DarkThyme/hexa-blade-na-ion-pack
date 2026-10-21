@@ -1,0 +1,322 @@
+[
+ {
+  "case": [
+   "blade",
+   "250 kW DC",
+   45,
+   false
+  ],
+  "standard": 23.77,
+  "anode_aware": 21.07,
+  "shapley": {
+   "margin": 2.264999999999999,
+   "precond": 0.43500000000000044,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "250 kW DC",
+   35,
+   false
+  ],
+  "standard": 25.8,
+  "anode_aware": 21.17,
+  "shapley": {
+   "margin": 4.144999999999998,
+   "precond": 0.4850000000000012,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "250 kW DC",
+   25,
+   true
+  ],
+  "standard": 26.83,
+  "anode_aware": 21.17,
+  "shapley": {
+   "margin": 4.644999999999998,
+   "precond": 1.0149999999999988,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "250 kW DC",
+   0,
+   false
+  ],
+  "standard": 39.7,
+  "anode_aware": 25.1,
+  "shapley": {
+   "margin": 13.650000000000002,
+   "precond": 0.9499999999999993,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "250 kW DC",
+   -20,
+   false
+  ],
+  "standard": 61.3,
+  "anode_aware": 34.3,
+  "shapley": {
+   "margin": 25.364999999999995,
+   "precond": 1.6350000000000013,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "350 kW DC",
+   45,
+   false
+  ],
+  "standard": 20.87,
+  "anode_aware": 15.2,
+  "shapley": {
+   "margin": 2.0658333333333334,
+   "precond": -0.015833333333332998,
+   "thermal": 2.8908333333333336,
+   "crate": 0.7291666666666674
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "350 kW DC",
+   35,
+   false
+  ],
+  "standard": 20.07,
+  "anode_aware": 15.27,
+  "shapley": {
+   "margin": 4.365,
+   "precond": 0.43500000000000044,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "350 kW DC",
+   25,
+   true
+  ],
+  "standard": 21.37,
+  "anode_aware": 15.27,
+  "shapley": {
+   "margin": 4.915000000000001,
+   "precond": 1.1850000000000003,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "350 kW DC",
+   0,
+   false
+  ],
+  "standard": 32.67,
+  "anode_aware": 19.63,
+  "shapley": {
+   "margin": 12.355000000000004,
+   "precond": 0.6850000000000005,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "blade",
+   "350 kW DC",
+   -20,
+   false
+  ],
+  "standard": 59.2,
+  "anode_aware": 28.67,
+  "shapley": {
+   "margin": 28.945,
+   "precond": 1.5849999999999989,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "250 kW DC",
+   45,
+   false
+  ],
+  "standard": 29.6,
+  "anode_aware": 21.07,
+  "shapley": {
+   "margin": 7.265000000000001,
+   "precond": 1.2650000000000006,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "250 kW DC",
+   35,
+   false
+  ],
+  "standard": 30.8,
+  "anode_aware": 21.13,
+  "shapley": {
+   "margin": 8.465,
+   "precond": 1.2050000000000016,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "250 kW DC",
+   25,
+   true
+  ],
+  "standard": 31.8,
+  "anode_aware": 21.13,
+  "shapley": {
+   "margin": 8.920000000000002,
+   "precond": 1.7499999999999996,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "250 kW DC",
+   0,
+   false
+  ],
+  "standard": 43.1,
+  "anode_aware": 25.77,
+  "shapley": {
+   "margin": 15.93,
+   "precond": 1.4000000000000021,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "250 kW DC",
+   -20,
+   false
+  ],
+  "standard": 67.33,
+  "anode_aware": 36.83,
+  "shapley": {
+   "margin": 29.014999999999997,
+   "precond": 1.485000000000003,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "350 kW DC",
+   45,
+   false
+  ],
+  "standard": 26.53,
+  "anode_aware": 15.2,
+  "shapley": {
+   "margin": 7.0075,
+   "precond": 0.7358333333333338,
+   "thermal": 2.8024999999999998,
+   "crate": 0.7841666666666676
+  }
+ },
+ {
+  "case": [
+   "module",
+   "350 kW DC",
+   35,
+   false
+  ],
+  "standard": 25.17,
+  "anode_aware": 15.43,
+  "shapley": {
+   "margin": 8.535,
+   "precond": 1.2050000000000007,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "350 kW DC",
+   25,
+   true
+  ],
+  "standard": 26.5,
+  "anode_aware": 15.43,
+  "shapley": {
+   "margin": 9.02,
+   "precond": 2.0500000000000003,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "350 kW DC",
+   0,
+   false
+  ],
+  "standard": 38.97,
+  "anode_aware": 21.07,
+  "shapley": {
+   "margin": 16.549999999999997,
+   "precond": 1.3500000000000014,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ },
+ {
+  "case": [
+   "module",
+   "350 kW DC",
+   -20,
+   false
+  ],
+  "standard": 66.83,
+  "anode_aware": 34.5,
+  "shapley": {
+   "margin": 30.784999999999993,
+   "precond": 1.5450000000000017,
+   "thermal": 0.0,
+   "crate": 0.0
+  }
+ }
+]

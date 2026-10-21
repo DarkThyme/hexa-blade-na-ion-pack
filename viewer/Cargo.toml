@@ -1,0 +1,24 @@
+[package]
+name = "hexablade_viewer"
+version = "0.1.0"
+edition = "2021"
+description = "3D showcase of the Hexa-Blade sodium-ion pack charging simulation (reads web_data/, schema hexablade.v1)"
+
+[dependencies]
+bevy = "0.16.1"
+bevy_egui = "0.34.1"
+egui_plot = "0.32.1"
+ehttp = "0.5"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+codegen-units = 1

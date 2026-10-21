@@ -1,0 +1,122 @@
+[
+ {
+  "charger": "250 kW DC",
+  "pack_temp_c": 25,
+  "t80": 18.9,
+  "t85": 20.93,
+  "t90": 22.6,
+  "peak_temp_c": 30.7,
+  "sei_aging_h25": 0.511,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "250 kW DC",
+  "pack_temp_c": 30,
+  "t80": 18.23,
+  "t85": 19.73,
+  "t90": 21.17,
+  "peak_temp_c": 34.9,
+  "sei_aging_h25": 0.648,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "250 kW DC",
+  "pack_temp_c": 35,
+  "t80": 18.03,
+  "t85": 19.47,
+  "t90": 20.87,
+  "peak_temp_c": 39.1,
+  "sei_aging_h25": 0.864,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "250 kW DC",
+  "pack_temp_c": 40,
+  "t80": 17.97,
+  "t85": 19.4,
+  "t90": 20.83,
+  "peak_temp_c": 43.3,
+  "sei_aging_h25": 1.167,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "250 kW DC",
+  "pack_temp_c": 45,
+  "t80": 17.93,
+  "t85": 19.37,
+  "t90": 20.77,
+  "peak_temp_c": 47.6,
+  "sei_aging_h25": 1.565,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "250 kW DC",
+  "pack_temp_c": "standard",
+  "t80": 20.67,
+  "t85": 24.1,
+  "t90": 27.3,
+  "peak_temp_c": 35.3,
+  "sei_aging_h25": 0.867,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "350 kW DC",
+  "pack_temp_c": 25,
+  "t80": 14.1,
+  "t85": 15.83,
+  "t90": 17.27,
+  "peak_temp_c": 33.5,
+  "sei_aging_h25": 0.453,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "350 kW DC",
+  "pack_temp_c": 30,
+  "t80": 13.47,
+  "t85": 14.8,
+  "t90": 15.93,
+  "peak_temp_c": 37.4,
+  "sei_aging_h25": 0.553,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "350 kW DC",
+  "pack_temp_c": 35,
+  "t80": 13.07,
+  "t85": 14.13,
+  "t90": 15.17,
+  "peak_temp_c": 41.6,
+  "sei_aging_h25": 0.7,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "350 kW DC",
+  "pack_temp_c": 40,
+  "t80": 12.93,
+  "t85": 13.97,
+  "t90": 15.0,
+  "peak_temp_c": 45.6,
+  "sei_aging_h25": 0.921,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "350 kW DC",
+  "pack_temp_c": 45,
+  "t80": 12.93,
+  "t85": 13.93,
+  "t90": 14.97,
+  "peak_temp_c": 49.7,
+  "sei_aging_h25": 1.221,
+  "limiter": "Charger power"
+ },
+ {
+  "charger": "350 kW DC",
+  "pack_temp_c": "standard",
+  "t80": 16.1,
+  "t85": 19.17,
+  "t90": 22.07,
+  "peak_temp_c": 37.5,
+  "sei_aging_h25": 0.785,
+  "limiter": "Na-plating guard"
+ }
+]

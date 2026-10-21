@@ -1,0 +1,8548 @@
+[
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 15.97,
+"t90_min": 21.37,
+"peak_temp_c": 41.79,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.935,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.461,
+"Charger current": 0.014,
+"Na-plating guard": 0.525
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.3,
+"temp_at_90_c": 40.94
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 20.77,
+"t90_min": 26.83,
+"peak_temp_c": 38.68,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.988,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.546,
+"Charger current": 0.004,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.6,
+"temp_at_90_c": 38.06
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.87,
+"t90_min": 39.7,
+"peak_temp_c": 29.23,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.588,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.299,
+"Charger current": 0.001,
+"Na-plating guard": 0.701
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.8,
+"temp_at_90_c": 29.23
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.83,
+"t90_min": 32.67,
+"peak_temp_c": 29.83,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.563,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.238,
+"Charger current": 0.003,
+"Na-plating guard": 0.759
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.8,
+"temp_at_90_c": 29.83
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 23.07,
+"t90_min": 31.8,
+"peak_temp_c": 38.31,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.053,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.42,
+"Charger current": 0.006,
+"Na-plating guard": 0.574
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.1,
+"temp_at_90_c": 35.46
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.33,
+"t90_min": 21.2,
+"peak_temp_c": 40.13,
+"peak_c_rate": 2.56,
+"min_anode_mv": 17.2,
+"aging_h25": 0.782,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.8,
+"temp_at_90_c": 40.13
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 26.5,
+"peak_temp_c": 41.63,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.01,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.329,
+"Charger current": 0.021,
+"Na-plating guard": 0.649
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.2,
+"temp_at_90_c": 37.76
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 31.13,
+"t90_min": 43.1,
+"peak_temp_c": 29.92,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.255,
+"Charger current": 0.002,
+"Na-plating guard": 0.743
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.1,
+"temp_at_90_c": 29.91
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.0,
+"t90_min": 25.5,
+"peak_temp_c": 29.72,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.329,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.576,
+"Charger current": 0.001,
+"Na-plating guard": 0.423
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.5,
+"temp_at_90_c": 29.72
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 44.37,
+"t90_min": 59.2,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.599,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.4,
+"temp_at_90_c": 28.22
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 46.23,
+"t90_min": 61.3,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.605,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.062,
+"Na-plating guard": 0.938
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.9,
+"temp_at_90_c": 28.22
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.37,
+"t90_min": 15.5,
+"peak_temp_c": 43.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.677,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.818,
+"Charger current": 0.019,
+"Na-plating guard": 0.163
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.9,
+"temp_at_90_c": 43.94
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 16.0,
+"t90_min": 19.93,
+"peak_temp_c": 31.14,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.312,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.504,
+"Charger current": 0.005,
+"Na-plating guard": 0.491
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 31.14
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.4,
+"t90_min": 21.33,
+"peak_temp_c": 39.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.737,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.799,
+"Charger current": 0.009,
+"Na-plating guard": 0.192
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 39.7
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.23,
+"t90_min": 35.0,
+"peak_temp_c": 26.63,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.271,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.316,
+"Na-plating guard": 0.683,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.9,
+"temp_at_90_c": 26.63
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.37,
+"t90_min": 29.27,
+"peak_temp_c": 27.25,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.263,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.068,
+"Na-plating guard": 0.931,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.7,
+"temp_at_90_c": 27.25
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.73,
+"t90_min": 16.3,
+"peak_temp_c": 43.32,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.662,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.624,
+"Charger current": 0.035,
+"Na-plating guard": 0.341
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.8,
+"temp_at_90_c": 43.32
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.7,
+"t90_min": 26.37,
+"peak_temp_c": 30.77,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.366,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.52,
+"Charger current": 0.003,
+"Na-plating guard": 0.477
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.0,
+"temp_at_90_c": 30.77
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 27.43,
+"t90_min": 38.97,
+"peak_temp_c": 30.07,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.132,
+"Charger current": 0.003,
+"Na-plating guard": 0.865
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.8,
+"temp_at_90_c": 30.03
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.37,
+"t90_min": 21.6,
+"peak_temp_c": 31.57,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.353,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.414,
+"Charger current": 0.006,
+"Na-plating guard": 0.579
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.8,
+"temp_at_90_c": 31.57
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 19.8,
+"t90_min": 24.83,
+"peak_temp_c": 42.43,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 42.04
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 14.87,
+"t90_min": 19.23,
+"peak_temp_c": 45.53,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.084,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.529,
+"Charger current": 0.021,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.4,
+"temp_at_90_c": 45.08
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 50.0,
+"t90_min": 67.33,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.783,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.047,
+"Na-plating guard": 0.952,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 27.1,
+"temp_at_90_c": 29.54
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.03,
+"t90_min": 38.2,
+"peak_temp_c": 31.5,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.607,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.313,
+"Charger current": 0.001,
+"Na-plating guard": 0.686
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 31.5
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.87,
+"t90_min": 37.27,
+"peak_temp_c": 28.93,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.181,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 13.4,
+"temp_at_90_c": 28.93
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.37,
+"t90_min": 31.6,
+"peak_temp_c": 31.99,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.582,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.249,
+"Charger current": 0.003,
+"Na-plating guard": 0.748
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.3,
+"temp_at_90_c": 31.99
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.27,
+"t90_min": 66.83,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.794,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 27.9,
+"temp_at_90_c": 29.54
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.9,
+"t90_min": 35.03,
+"peak_temp_c": 29.2,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.326,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.01,
+"Na-plating guard": 0.987,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.3,
+"temp_at_90_c": 29.2
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 45.13,
+"t90_min": 58.73,
+"peak_temp_c": 30.59,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.621,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.065,
+"Na-plating guard": 0.935,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.0,
+"temp_at_90_c": 30.59
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 21.4,
+"t90_min": 28.5,
+"peak_temp_c": 41.93,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.224,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.481,
+"Charger current": 0.009,
+"Na-plating guard": 0.509
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.1,
+"temp_at_90_c": 39.59
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 16.57,
+"t90_min": 23.27,
+"peak_temp_c": 45.27,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.154,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.383,
+"Charger current": 0.034,
+"Na-plating guard": 0.582
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.6,
+"temp_at_90_c": 42.19
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 20.77,
+"t90_min": 26.83,
+"peak_temp_c": 38.68,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.988,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.546,
+"Charger current": 0.004,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.6,
+"temp_at_90_c": 38.06
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 30.03,
+"t90_min": 40.9,
+"peak_temp_c": 32.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.27,
+"Charger current": 0.002,
+"Na-plating guard": 0.729
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.9,
+"temp_at_90_c": 32.7
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 43.27,
+"t90_min": 56.63,
+"peak_temp_c": 30.58,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.613,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.8,
+"temp_at_90_c": 30.58
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.87,
+"t90_min": 39.7,
+"peak_temp_c": 29.23,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.588,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.299,
+"Charger current": 0.001,
+"Na-plating guard": 0.701
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.1,
+"temp_at_90_c": 29.23
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 15.97,
+"t90_min": 21.37,
+"peak_temp_c": 41.79,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.935,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.461,
+"Charger current": 0.014,
+"Na-plating guard": 0.525
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 40.94
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 26.37,
+"t90_min": 36.8,
+"peak_temp_c": 32.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.139,
+"Charger current": 0.004,
+"Na-plating guard": 0.857
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.3,
+"temp_at_90_c": 32.83
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.83,
+"t90_min": 32.67,
+"peak_temp_c": 29.83,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.563,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.238,
+"Charger current": 0.003,
+"Na-plating guard": 0.759
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.2,
+"temp_at_90_c": 29.83
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 23.07,
+"t90_min": 31.8,
+"peak_temp_c": 38.31,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.053,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.42,
+"Charger current": 0.006,
+"Na-plating guard": 0.574
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.6,
+"temp_at_90_c": 35.46
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 46.23,
+"t90_min": 61.3,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.605,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.062,
+"Na-plating guard": 0.938
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.0,
+"temp_at_90_c": 28.22
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.13,
+"t90_min": 64.8,
+"peak_temp_c": 32.32,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.802,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.049,
+"Na-plating guard": 0.95,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 26.6,
+"temp_at_90_c": 32.32
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 31.13,
+"t90_min": 43.1,
+"peak_temp_c": 29.92,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.255,
+"Charger current": 0.002,
+"Na-plating guard": 0.743
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.1,
+"temp_at_90_c": 29.91
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 44.37,
+"t90_min": 59.2,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.599,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.9,
+"temp_at_90_c": 28.22
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 20.77,
+"t90_min": 26.83,
+"peak_temp_c": 38.68,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.988,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.546,
+"Charger current": 0.004,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.7,
+"temp_at_90_c": 38.06
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 26.5,
+"peak_temp_c": 41.63,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.01,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.329,
+"Charger current": 0.021,
+"Na-plating guard": 0.649
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.1,
+"temp_at_90_c": 37.76
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 48.37,
+"t90_min": 64.27,
+"peak_temp_c": 32.34,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.814,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 27.5,
+"temp_at_90_c": 32.34
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 15.97,
+"t90_min": 21.37,
+"peak_temp_c": 41.79,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.935,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.461,
+"Charger current": 0.014,
+"Na-plating guard": 0.525
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 40.94
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.87,
+"t90_min": 39.7,
+"peak_temp_c": 29.23,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.588,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.299,
+"Charger current": 0.001,
+"Na-plating guard": 0.701
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.4,
+"temp_at_90_c": 29.23
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.83,
+"t90_min": 32.67,
+"peak_temp_c": 29.83,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.563,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.238,
+"Charger current": 0.003,
+"Na-plating guard": 0.759
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.3,
+"temp_at_90_c": 29.83
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 27.43,
+"t90_min": 38.97,
+"peak_temp_c": 30.07,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.132,
+"Charger current": 0.003,
+"Na-plating guard": 0.865
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.3,
+"temp_at_90_c": 30.03
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 46.23,
+"t90_min": 61.3,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.605,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.062,
+"Na-plating guard": 0.938
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.3,
+"temp_at_90_c": 28.22
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 50.0,
+"t90_min": 67.33,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.783,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.047,
+"Na-plating guard": 0.952,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 28.2,
+"temp_at_90_c": 29.54
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 44.37,
+"t90_min": 59.2,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.599,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.7,
+"temp_at_90_c": 28.22
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.52,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.94,
+"aging_h25": 1.015,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.1,
+"temp_at_90_c": 43.52
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 23.07,
+"t90_min": 31.8,
+"peak_temp_c": 38.31,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.053,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.42,
+"Charger current": 0.006,
+"Na-plating guard": 0.574
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.7,
+"temp_at_90_c": 35.46
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 31.13,
+"t90_min": 43.1,
+"peak_temp_c": 29.92,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.255,
+"Charger current": 0.002,
+"Na-plating guard": 0.743
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.0,
+"temp_at_90_c": 29.91
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 20.77,
+"t90_min": 25.1,
+"peak_temp_c": 31.48,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.339,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.589,
+"Charger current": 0.001,
+"Na-plating guard": 0.41
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.7,
+"temp_at_90_c": 31.48
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.27,
+"t90_min": 66.83,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.794,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 28.8,
+"temp_at_90_c": 29.54
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 26.5,
+"peak_temp_c": 41.63,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.01,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.329,
+"Charger current": 0.021,
+"Na-plating guard": 0.649
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.9,
+"temp_at_90_c": 37.76
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 27.9,
+"t90_min": 34.3,
+"peak_temp_c": 28.4,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.277,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.321,
+"Na-plating guard": 0.678,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.2,
+"temp_at_90_c": 28.4
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 15.87,
+"t90_min": 19.63,
+"peak_temp_c": 32.71,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.514,
+"Charger current": 0.005,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.7,
+"temp_at_90_c": 32.71
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.37,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.64,
+"aging_h25": 0.858,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 47.37
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.1,
+"t90_min": 28.67,
+"peak_temp_c": 28.92,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.268,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.071,
+"Na-plating guard": 0.928,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.3,
+"temp_at_90_c": 28.92
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 42.98,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.59,
+"aging_h25": 0.938,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.8,
+"temp_at_90_c": 42.98
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.26,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.802,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.733,
+"Charger current": 0.052,
+"Na-plating guard": 0.216
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.3,
+"temp_at_90_c": 47.26
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.4,
+"t90_min": 25.77,
+"peak_temp_c": 33.12,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.376,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.537,
+"Charger current": 0.003,
+"Na-plating guard": 0.46
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.2,
+"temp_at_90_c": 33.12
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.33,
+"t90_min": 21.2,
+"peak_temp_c": 40.13,
+"peak_c_rate": 2.56,
+"min_anode_mv": 17.2,
+"aging_h25": 0.782,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.6,
+"temp_at_90_c": 40.13
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 50.0,
+"t90_min": 67.33,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.783,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.047,
+"Na-plating guard": 0.952,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 27.8,
+"temp_at_90_c": 29.54
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 27.43,
+"t90_min": 38.97,
+"peak_temp_c": 30.07,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.132,
+"Charger current": 0.003,
+"Na-plating guard": 0.865
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.0,
+"temp_at_90_c": 30.03
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.07,
+"t90_min": 21.07,
+"peak_temp_c": 33.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.363,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.428,
+"Charger current": 0.006,
+"Na-plating guard": 0.566
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.3,
+"temp_at_90_c": 33.83
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.37,
+"t90_min": 15.5,
+"peak_temp_c": 43.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.677,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.818,
+"Charger current": 0.019,
+"Na-plating guard": 0.163
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.7,
+"temp_at_90_c": 43.94
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.0,
+"t90_min": 25.5,
+"peak_temp_c": 29.72,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.329,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.576,
+"Charger current": 0.001,
+"Na-plating guard": 0.423
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 29.72
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 16.0,
+"t90_min": 19.93,
+"peak_temp_c": 31.14,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.312,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.504,
+"Charger current": 0.005,
+"Na-plating guard": 0.491
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.0,
+"temp_at_90_c": 31.14
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.4,
+"t90_min": 21.33,
+"peak_temp_c": 39.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.737,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.799,
+"Charger current": 0.009,
+"Na-plating guard": 0.192
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 39.7
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.23,
+"t90_min": 35.0,
+"peak_temp_c": 26.63,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.271,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.316,
+"Na-plating guard": 0.683,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 26.63
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.37,
+"t90_min": 29.27,
+"peak_temp_c": 27.25,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.263,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.068,
+"Na-plating guard": 0.931,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.7,
+"temp_at_90_c": 27.25
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.27,
+"t90_min": 66.83,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.794,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 29.0,
+"temp_at_90_c": 29.54
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.73,
+"t90_min": 16.3,
+"peak_temp_c": 43.32,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.662,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.624,
+"Charger current": 0.035,
+"Na-plating guard": 0.341
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.2,
+"temp_at_90_c": 43.32
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.33,
+"t90_min": 21.2,
+"peak_temp_c": 40.13,
+"peak_c_rate": 2.56,
+"min_anode_mv": 17.2,
+"aging_h25": 0.782,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.9,
+"temp_at_90_c": 40.13
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.73,
+"t90_min": 36.83,
+"peak_temp_c": 31.0,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.324,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.183,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 13.3,
+"temp_at_90_c": 31.0
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.73,
+"t90_min": 34.5,
+"peak_temp_c": 31.34,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.33,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.012,
+"Na-plating guard": 0.986,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.2,
+"temp_at_90_c": 31.34
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.37,
+"t90_min": 15.5,
+"peak_temp_c": 43.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.677,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.818,
+"Charger current": 0.019,
+"Na-plating guard": 0.163
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.2,
+"temp_at_90_c": 43.94
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.37,
+"t90_min": 21.6,
+"peak_temp_c": 31.57,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.353,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.414,
+"Charger current": 0.006,
+"Na-plating guard": 0.579
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.1,
+"temp_at_90_c": 31.57
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.0,
+"t90_min": 25.5,
+"peak_temp_c": 29.72,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.329,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.576,
+"Charger current": 0.001,
+"Na-plating guard": 0.423
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.8,
+"temp_at_90_c": 29.72
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 16.0,
+"t90_min": 19.93,
+"peak_temp_c": 31.14,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.312,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.504,
+"Charger current": 0.005,
+"Na-plating guard": 0.491
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.0,
+"temp_at_90_c": 31.14
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.7,
+"t90_min": 26.37,
+"peak_temp_c": 30.77,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.366,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.52,
+"Charger current": 0.003,
+"Na-plating guard": 0.477
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.8,
+"temp_at_90_c": 30.77
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.4,
+"t90_min": 21.33,
+"peak_temp_c": 39.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.737,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.799,
+"Charger current": 0.009,
+"Na-plating guard": 0.192
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 39.7
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.23,
+"t90_min": 35.0,
+"peak_temp_c": 26.63,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.271,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.316,
+"Na-plating guard": 0.683,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 26.63
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.87,
+"t90_min": 37.27,
+"peak_temp_c": 28.93,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.181,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.3,
+"temp_at_90_c": 28.93
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.73,
+"t90_min": 16.3,
+"peak_temp_c": 43.32,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.662,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.624,
+"Charger current": 0.035,
+"Na-plating guard": 0.341
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.3,
+"temp_at_90_c": 43.32
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.37,
+"t90_min": 29.27,
+"peak_temp_c": 27.25,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.263,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.068,
+"Na-plating guard": 0.931,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.5,
+"temp_at_90_c": 27.25
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.7,
+"t90_min": 26.37,
+"peak_temp_c": 30.77,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.366,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.52,
+"Charger current": 0.003,
+"Na-plating guard": 0.477
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 30.77
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 19.8,
+"t90_min": 24.83,
+"peak_temp_c": 42.43,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.3,
+"temp_at_90_c": 42.04
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.9,
+"t90_min": 35.03,
+"peak_temp_c": 29.2,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.326,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.01,
+"Na-plating guard": 0.987,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.8,
+"temp_at_90_c": 29.2
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.37,
+"t90_min": 21.6,
+"peak_temp_c": 31.57,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.353,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.414,
+"Charger current": 0.006,
+"Na-plating guard": 0.579
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.0,
+"temp_at_90_c": 31.57
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.03,
+"t90_min": 38.2,
+"peak_temp_c": 31.5,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.607,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.313,
+"Charger current": 0.001,
+"Na-plating guard": 0.686
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.2,
+"temp_at_90_c": 31.5
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.87,
+"t90_min": 37.27,
+"peak_temp_c": 28.93,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.181,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.4,
+"temp_at_90_c": 28.93
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.37,
+"t90_min": 31.6,
+"peak_temp_c": 31.99,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.582,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.249,
+"Charger current": 0.003,
+"Na-plating guard": 0.748
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.1,
+"temp_at_90_c": 31.99
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.9,
+"t90_min": 35.03,
+"peak_temp_c": 29.2,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.326,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.01,
+"Na-plating guard": 0.987,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.8,
+"temp_at_90_c": 29.2
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 21.4,
+"t90_min": 28.5,
+"peak_temp_c": 41.93,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.224,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.481,
+"Charger current": 0.009,
+"Na-plating guard": 0.509
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.9,
+"temp_at_90_c": 39.59
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 14.87,
+"t90_min": 19.23,
+"peak_temp_c": 45.53,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.084,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.529,
+"Charger current": 0.021,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 45.08
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 45.13,
+"t90_min": 58.73,
+"peak_temp_c": 30.59,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.621,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.065,
+"Na-plating guard": 0.935,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.8,
+"temp_at_90_c": 30.59
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 43.27,
+"t90_min": 56.63,
+"peak_temp_c": 30.58,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.613,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.3,
+"temp_at_90_c": 30.58
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 16.57,
+"t90_min": 23.27,
+"peak_temp_c": 45.27,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.154,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.383,
+"Charger current": 0.034,
+"Na-plating guard": 0.582
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.6,
+"temp_at_90_c": 42.19
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 30.03,
+"t90_min": 40.9,
+"peak_temp_c": 32.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.27,
+"Charger current": 0.002,
+"Na-plating guard": 0.729
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.3,
+"temp_at_90_c": 32.7
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 14.87,
+"t90_min": 19.23,
+"peak_temp_c": 45.53,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.084,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.529,
+"Charger current": 0.021,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 45.08
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 19.8,
+"t90_min": 24.83,
+"peak_temp_c": 42.43,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.4,
+"temp_at_90_c": 42.04
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.03,
+"t90_min": 38.2,
+"peak_temp_c": 31.5,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.607,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.313,
+"Charger current": 0.001,
+"Na-plating guard": 0.686
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.0,
+"temp_at_90_c": 31.5
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 26.37,
+"t90_min": 36.8,
+"peak_temp_c": 32.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.139,
+"Charger current": 0.004,
+"Na-plating guard": 0.857
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.5,
+"temp_at_90_c": 32.83
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.37,
+"t90_min": 31.6,
+"peak_temp_c": 31.99,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.582,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.249,
+"Charger current": 0.003,
+"Na-plating guard": 0.748
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.8,
+"temp_at_90_c": 31.99
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 21.4,
+"t90_min": 28.5,
+"peak_temp_c": 41.93,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.224,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.481,
+"Charger current": 0.009,
+"Na-plating guard": 0.509
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.3,
+"temp_at_90_c": 39.59
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 45.13,
+"t90_min": 58.73,
+"peak_temp_c": 30.59,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.621,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.065,
+"Na-plating guard": 0.935,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.7,
+"temp_at_90_c": 30.59
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.13,
+"t90_min": 64.8,
+"peak_temp_c": 32.32,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.802,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.049,
+"Na-plating guard": 0.95,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 27.6,
+"temp_at_90_c": 32.32
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 16.57,
+"t90_min": 23.27,
+"peak_temp_c": 45.27,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.154,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.383,
+"Charger current": 0.034,
+"Na-plating guard": 0.582
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.5,
+"temp_at_90_c": 42.19
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 30.03,
+"t90_min": 40.9,
+"peak_temp_c": 32.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.27,
+"Charger current": 0.002,
+"Na-plating guard": 0.729
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.6,
+"temp_at_90_c": 32.7
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 43.27,
+"t90_min": 56.63,
+"peak_temp_c": 30.58,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.613,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.3,
+"temp_at_90_c": 30.58
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 20.77,
+"t90_min": 26.83,
+"peak_temp_c": 38.68,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.988,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.546,
+"Charger current": 0.004,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.7,
+"temp_at_90_c": 38.06
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.87,
+"t90_min": 39.7,
+"peak_temp_c": 29.23,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.588,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.299,
+"Charger current": 0.001,
+"Na-plating guard": 0.701
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.2,
+"temp_at_90_c": 29.23
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 48.37,
+"t90_min": 64.27,
+"peak_temp_c": 32.34,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.814,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 27.6,
+"temp_at_90_c": 32.34
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 26.37,
+"t90_min": 36.8,
+"peak_temp_c": 32.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.139,
+"Charger current": 0.004,
+"Na-plating guard": 0.857
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.2,
+"temp_at_90_c": 32.83
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.83,
+"t90_min": 32.67,
+"peak_temp_c": 29.83,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.563,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.238,
+"Charger current": 0.003,
+"Na-plating guard": 0.759
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.1,
+"temp_at_90_c": 29.83
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 15.97,
+"t90_min": 21.37,
+"peak_temp_c": 41.79,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.935,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.461,
+"Charger current": 0.014,
+"Na-plating guard": 0.525
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 40.94
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 46.23,
+"t90_min": 61.3,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.605,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.062,
+"Na-plating guard": 0.938
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.0,
+"temp_at_90_c": 28.22
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.13,
+"t90_min": 64.8,
+"peak_temp_c": 32.32,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.802,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.049,
+"Na-plating guard": 0.95,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 26.2,
+"temp_at_90_c": 32.32
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 23.07,
+"t90_min": 31.8,
+"peak_temp_c": 38.31,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.053,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.42,
+"Charger current": 0.006,
+"Na-plating guard": 0.574
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.9,
+"temp_at_90_c": 35.46
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.52,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.94,
+"aging_h25": 1.015,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.9,
+"temp_at_90_c": 43.52
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 26.5,
+"peak_temp_c": 41.63,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.01,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.329,
+"Charger current": 0.021,
+"Na-plating guard": 0.649
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.4,
+"temp_at_90_c": 37.76
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 48.37,
+"t90_min": 64.27,
+"peak_temp_c": 32.34,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.814,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 26.3,
+"temp_at_90_c": 32.34
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 44.37,
+"t90_min": 59.2,
+"peak_temp_c": 28.22,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.599,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.7,
+"temp_at_90_c": 28.22
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 20.77,
+"t90_min": 25.1,
+"peak_temp_c": 31.48,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.339,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.589,
+"Charger current": 0.001,
+"Na-plating guard": 0.41
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 31.48
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 31.13,
+"t90_min": 43.1,
+"peak_temp_c": 29.92,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.255,
+"Charger current": 0.002,
+"Na-plating guard": 0.743
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.6,
+"temp_at_90_c": 29.91
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 15.87,
+"t90_min": 19.63,
+"peak_temp_c": 32.71,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.514,
+"Charger current": 0.005,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.0,
+"temp_at_90_c": 32.71
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 27.9,
+"t90_min": 34.3,
+"peak_temp_c": 28.4,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.277,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.321,
+"Na-plating guard": 0.678,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.5,
+"temp_at_90_c": 28.4
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.37,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.64,
+"aging_h25": 0.858,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.4,
+"temp_at_90_c": 47.37
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.1,
+"t90_min": 28.67,
+"peak_temp_c": 28.92,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.268,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.071,
+"Na-plating guard": 0.928,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.0,
+"temp_at_90_c": 28.92
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 27.43,
+"t90_min": 38.97,
+"peak_temp_c": 30.07,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.706,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.132,
+"Charger current": 0.003,
+"Na-plating guard": 0.865
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 16.6,
+"temp_at_90_c": 30.03
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 42.98,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.59,
+"aging_h25": 0.938,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.8,
+"temp_at_90_c": 42.98
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.26,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.802,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.733,
+"Charger current": 0.052,
+"Na-plating guard": 0.216
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.4,
+"temp_at_90_c": 47.26
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.4,
+"t90_min": 25.77,
+"peak_temp_c": 33.12,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.376,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.537,
+"Charger current": 0.003,
+"Na-plating guard": 0.46
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 33.12
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.07,
+"t90_min": 21.07,
+"peak_temp_c": 33.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.363,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.428,
+"Charger current": 0.006,
+"Na-plating guard": 0.566
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.8,
+"temp_at_90_c": 33.83
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 20.77,
+"t90_min": 25.1,
+"peak_temp_c": 31.48,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.339,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.589,
+"Charger current": 0.001,
+"Na-plating guard": 0.41
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 31.48
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.37,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.64,
+"aging_h25": 0.858,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.3,
+"temp_at_90_c": 47.37
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 50.0,
+"t90_min": 67.33,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.783,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.047,
+"Na-plating guard": 0.952,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 28.6,
+"temp_at_90_c": 29.54
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.73,
+"t90_min": 36.83,
+"peak_temp_c": 31.0,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.324,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.183,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.0,
+"temp_at_90_c": 31.0
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.52,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.94,
+"aging_h25": 1.015,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.9,
+"temp_at_90_c": 43.52
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 15.87,
+"t90_min": 19.63,
+"peak_temp_c": 32.71,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.514,
+"Charger current": 0.005,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 32.71
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 27.9,
+"t90_min": 34.3,
+"peak_temp_c": 28.4,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.277,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.321,
+"Na-plating guard": 0.678,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.6,
+"temp_at_90_c": 28.4
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.27,
+"t90_min": 66.83,
+"peak_temp_c": 29.54,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.794,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 1.0,
+"Voltage limit (CV)": 0.0
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 29.0,
+"temp_at_90_c": 29.54
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.26,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.802,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.733,
+"Charger current": 0.052,
+"Na-plating guard": 0.216
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.8,
+"temp_at_90_c": 47.26
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.1,
+"t90_min": 28.67,
+"peak_temp_c": 28.92,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.268,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.071,
+"Na-plating guard": 0.928,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 28.92
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.33,
+"t90_min": 21.2,
+"peak_temp_c": 40.13,
+"peak_c_rate": 2.56,
+"min_anode_mv": 17.2,
+"aging_h25": 0.782,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.7,
+"temp_at_90_c": 40.13
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.73,
+"t90_min": 34.5,
+"peak_temp_c": 31.34,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.33,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.012,
+"Na-plating guard": 0.986,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.1,
+"temp_at_90_c": 31.34
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 42.98,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.59,
+"aging_h25": 0.938,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.8,
+"temp_at_90_c": 42.98
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.4,
+"t90_min": 25.77,
+"peak_temp_c": 33.12,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.376,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.537,
+"Charger current": 0.003,
+"Na-plating guard": 0.46
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.6,
+"temp_at_90_c": 33.12
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.07,
+"t90_min": 21.07,
+"peak_temp_c": 33.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.363,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.428,
+"Charger current": 0.006,
+"Na-plating guard": 0.566
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.0,
+"temp_at_90_c": 33.83
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.37,
+"t90_min": 15.5,
+"peak_temp_c": 43.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.677,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.818,
+"Charger current": 0.019,
+"Na-plating guard": 0.163
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.8,
+"temp_at_90_c": 43.94
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 16.0,
+"t90_min": 19.93,
+"peak_temp_c": 31.14,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.312,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.504,
+"Charger current": 0.005,
+"Na-plating guard": 0.491
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.0,
+"temp_at_90_c": 31.14
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.23,
+"t90_min": 35.0,
+"peak_temp_c": 26.63,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.271,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.316,
+"Na-plating guard": 0.683,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.7,
+"temp_at_90_c": 26.63
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.73,
+"t90_min": 36.83,
+"peak_temp_c": 31.0,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.324,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.183,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.3,
+"temp_at_90_c": 31.0
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.37,
+"t90_min": 29.27,
+"peak_temp_c": 27.25,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.263,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.068,
+"Na-plating guard": 0.931,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 27.25
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.0,
+"t90_min": 25.5,
+"peak_temp_c": 29.72,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.329,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.576,
+"Charger current": 0.001,
+"Na-plating guard": 0.423
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.3,
+"temp_at_90_c": 29.72
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.7,
+"t90_min": 26.37,
+"peak_temp_c": 30.77,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.366,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.52,
+"Charger current": 0.003,
+"Na-plating guard": 0.477
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.6,
+"temp_at_90_c": 30.77
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.73,
+"t90_min": 16.3,
+"peak_temp_c": 43.32,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.662,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.624,
+"Charger current": 0.035,
+"Na-plating guard": 0.341
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 43.32
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.73,
+"t90_min": 34.5,
+"peak_temp_c": 31.34,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.33,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.012,
+"Na-plating guard": 0.986,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.6,
+"temp_at_90_c": 31.34
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.4,
+"t90_min": 21.33,
+"peak_temp_c": 39.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.737,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.799,
+"Charger current": 0.009,
+"Na-plating guard": 0.192
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 39.7
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 19.8,
+"t90_min": 24.83,
+"peak_temp_c": 42.43,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 42.04
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.37,
+"t90_min": 21.6,
+"peak_temp_c": 31.57,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.353,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.414,
+"Charger current": 0.006,
+"Na-plating guard": 0.579
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.6,
+"temp_at_90_c": 31.57
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 14.87,
+"t90_min": 19.23,
+"peak_temp_c": 45.53,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.084,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.529,
+"Charger current": 0.021,
+"Na-plating guard": 0.45
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 45.08
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 28.03,
+"t90_min": 38.2,
+"peak_temp_c": 31.5,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 0.607,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.313,
+"Charger current": 0.001,
+"Na-plating guard": 0.686
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.7,
+"temp_at_90_c": 31.5
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.87,
+"t90_min": 37.27,
+"peak_temp_c": 28.93,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.181,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 13.8,
+"temp_at_90_c": 28.93
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 22.37,
+"t90_min": 31.6,
+"peak_temp_c": 31.99,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 0.582,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.249,
+"Charger current": 0.003,
+"Na-plating guard": 0.748
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.9,
+"temp_at_90_c": 31.99
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.9,
+"t90_min": 35.03,
+"peak_temp_c": 29.2,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.326,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.01,
+"Na-plating guard": 0.987,
+"Voltage limit (CV)": 0.003
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.2,
+"temp_at_90_c": 29.2
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 21.4,
+"t90_min": 28.5,
+"peak_temp_c": 41.93,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.224,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.481,
+"Charger current": 0.009,
+"Na-plating guard": 0.509
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.9,
+"temp_at_90_c": 39.59
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.52,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.94,
+"aging_h25": 1.015,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.7,
+"temp_at_90_c": 43.52
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 16.57,
+"t90_min": 23.27,
+"peak_temp_c": 45.27,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.154,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.383,
+"Charger current": 0.034,
+"Na-plating guard": 0.582
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.2,
+"temp_at_90_c": 42.19
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 20.77,
+"t90_min": 25.1,
+"peak_temp_c": 31.48,
+"peak_c_rate": 2.56,
+"min_anode_mv": 15.0,
+"aging_h25": 0.339,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.589,
+"Charger current": 0.001,
+"Na-plating guard": 0.41
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.7,
+"temp_at_90_c": 31.48
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 43.27,
+"t90_min": 56.63,
+"peak_temp_c": 30.58,
+"peak_c_rate": 2.76,
+"min_anode_mv": 40.0,
+"aging_h25": 0.613,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.6,
+"temp_at_90_c": 30.58
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.37,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.64,
+"aging_h25": 0.858,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.2,
+"temp_at_90_c": 47.37
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 30.03,
+"t90_min": 40.9,
+"peak_temp_c": 32.7,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.27,
+"Charger current": 0.002,
+"Na-plating guard": 0.729
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.4,
+"temp_at_90_c": 32.7
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 15.87,
+"t90_min": 19.63,
+"peak_temp_c": 32.71,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.0,
+"aging_h25": 0.319,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.514,
+"Charger current": 0.005,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.4,
+"temp_at_90_c": 32.71
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 45.13,
+"t90_min": 58.73,
+"peak_temp_c": 30.59,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.621,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.065,
+"Na-plating guard": 0.935,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 14.9,
+"temp_at_90_c": 30.59
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 42.98,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.59,
+"aging_h25": 0.938,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.8,
+"temp_at_90_c": 42.98
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 27.9,
+"t90_min": 34.3,
+"peak_temp_c": 28.4,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.277,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.321,
+"Na-plating guard": 0.678,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.0,
+"temp_at_90_c": 28.4
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 26.37,
+"t90_min": 36.8,
+"peak_temp_c": 32.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 0.733,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.139,
+"Charger current": 0.004,
+"Na-plating guard": 0.857
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 15.0,
+"temp_at_90_c": 32.83
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 25,
+"precondition": true,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.26,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.802,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.733,
+"Charger current": 0.052,
+"Na-plating guard": 0.216
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.5,
+"temp_at_90_c": 47.26
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 23.1,
+"t90_min": 28.67,
+"peak_temp_c": 28.92,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.268,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.071,
+"Na-plating guard": 0.928,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.3,
+"temp_at_90_c": 28.92
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 21.4,
+"t90_min": 25.77,
+"peak_temp_c": 33.12,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.376,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.537,
+"Charger current": 0.003,
+"Na-plating guard": 0.46
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 33.12
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 49.13,
+"t90_min": 64.8,
+"peak_temp_c": 32.32,
+"peak_c_rate": 2.15,
+"min_anode_mv": 40.0,
+"aging_h25": 0.802,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.049,
+"Na-plating guard": 0.95,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 25.9,
+"temp_at_90_c": 32.32
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 30.73,
+"t90_min": 36.83,
+"peak_temp_c": 31.0,
+"peak_c_rate": 2.15,
+"min_anode_mv": 15.0,
+"aging_h25": 0.324,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.183,
+"Na-plating guard": 0.816,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 12.5,
+"temp_at_90_c": 31.0
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 0,
+"precondition": false,
+"t80_min": 17.07,
+"t90_min": 21.07,
+"peak_temp_c": 33.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.363,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.428,
+"Charger current": 0.006,
+"Na-plating guard": 0.566
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 5.3,
+"temp_at_90_c": 33.83
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 28.73,
+"t90_min": 34.5,
+"peak_temp_c": 31.34,
+"peak_c_rate": 2.93,
+"min_anode_mv": 15.0,
+"aging_h25": 0.33,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.012,
+"Na-plating guard": 0.986,
+"Voltage limit (CV)": 0.002
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 11.8,
+"temp_at_90_c": 31.34
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": -20,
+"precondition": false,
+"t80_min": 48.37,
+"t90_min": 64.27,
+"peak_temp_c": 32.34,
+"peak_c_rate": 2.67,
+"min_anode_mv": 40.0,
+"aging_h25": 0.814,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Na-plating guard": 0.999,
+"Voltage limit (CV)": 0.001
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 24.4,
+"temp_at_90_c": 32.34
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 16.63,
+"t90_min": 20.87,
+"peak_temp_c": 49.63,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.579,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.035,
+"Charger current": 0.03,
+"Na-plating guard": 0.348,
+"Thermal derate": 0.587
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 48.24
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 15.23,
+"t90_min": 20.07,
+"peak_temp_c": 44.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.076,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.499,
+"Charger current": 0.02,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.0,
+"temp_at_90_c": 43.88
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 19.13,
+"t90_min": 23.77,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.631,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.653,
+"Charger current": 0.007,
+"Na-plating guard": 0.34
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.2,
+"temp_at_90_c": 46.51
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 25.8,
+"peak_temp_c": 41.67,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.161,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.578,
+"Charger current": 0.004,
+"Na-plating guard": 0.418
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.9,
+"temp_at_90_c": 40.67
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 46.73,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.47,
+"aging_h25": 0.825,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.1,
+"temp_at_90_c": 46.73
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 27.39,
+"aging_h25": 1.474,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 47.94
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.3,
+"t90_min": 21.17,
+"peak_temp_c": 42.64,
+"peak_c_rate": 2.56,
+"min_anode_mv": 20.73,
+"aging_h25": 0.964,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.8,
+"temp_at_90_c": 42.64
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.87,
+"t90_min": 18.57,
+"peak_temp_c": 49.68,
+"peak_c_rate": 3.41,
+"min_anode_mv": 28.26,
+"aging_h25": 1.43,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.039,
+"Charger current": 0.034,
+"Thermal derate": 0.927
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 49.66
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.5,
+"t90_min": 26.53,
+"peak_temp_c": 48.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.538,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger current": 0.035,
+"Na-plating guard": 0.54,
+"Thermal derate": 0.425
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.9,
+"temp_at_90_c": 42.49
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.31,
+"aging_h25": 1.242,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.7,
+"temp_at_90_c": 46.19
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 17.33,
+"t90_min": 25.17,
+"peak_temp_c": 44.68,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.132,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.348,
+"Charger current": 0.032,
+"Na-plating guard": 0.62
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.9,
+"temp_at_90_c": 40.03
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 41.91,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.87,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.956,
+"Charger current": 0.013,
+"Na-plating guard": 0.031
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.9,
+"temp_at_90_c": 41.91
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.93,
+"t90_min": 29.6,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.578,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.469,
+"Charger current": 0.013,
+"Na-plating guard": 0.517
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.4,
+"temp_at_90_c": 40.86
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.8,
+"t90_min": 18.3,
+"peak_temp_c": 48.83,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.45,
+"aging_h25": 1.183,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger current": 0.051,
+"Thermal derate": 0.949
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.4,
+"temp_at_90_c": 48.42
+},
+{
+"config": "margin",
+"switched": [
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.47,
+"t90_min": 15.87,
+"peak_temp_c": 46.0,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.775,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.652,
+"Charger current": 0.05,
+"Na-plating guard": 0.298
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.7,
+"temp_at_90_c": 46.0
+},
+{
+"config": "standard",
+"switched": [],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 22.3,
+"t90_min": 30.8,
+"peak_temp_c": 41.11,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.438,
+"Charger current": 0.009,
+"Na-plating guard": 0.554
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.2,
+"temp_at_90_c": 37.26
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 16.9,
+"t90_min": 20.73,
+"peak_temp_c": 49.88,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.63,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.03,
+"Charger current": 0.03,
+"Na-plating guard": 0.305,
+"Thermal derate": 0.634
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.7,
+"temp_at_90_c": 49.16
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 19.77,
+"t90_min": 24.83,
+"peak_temp_c": 42.45,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.189,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 42.07
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.8,
+"t90_min": 22.9,
+"peak_temp_c": 48.65,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.666,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.69,
+"Charger current": 0.007,
+"Na-plating guard": 0.302
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.1,
+"temp_at_90_c": 47.9
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 14.87,
+"t90_min": 19.2,
+"peak_temp_c": 45.55,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.083,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.53,
+"Charger current": 0.021,
+"Na-plating guard": 0.449
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 45.11
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 14.07,
+"t90_min": 17.73,
+"peak_temp_c": 51.6,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.464,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.585,
+"Charger current": 0.036,
+"Na-plating guard": 0.379
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.7,
+"temp_at_90_c": 50.52
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 19.13,
+"t90_min": 23.77,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.631,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.653,
+"Charger current": 0.007,
+"Na-plating guard": 0.34
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.5,
+"temp_at_90_c": 46.51
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 15.23,
+"t90_min": 20.07,
+"peak_temp_c": 44.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.076,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.499,
+"Charger current": 0.02,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 43.88
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 25.8,
+"peak_temp_c": 41.67,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.161,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.578,
+"Charger current": 0.004,
+"Na-plating guard": 0.418
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.4,
+"temp_at_90_c": 40.67
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 27.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.617,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.523,
+"Charger current": 0.015,
+"Na-plating guard": 0.462
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.9,
+"temp_at_90_c": 43.7
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.33,
+"t90_min": 24.93,
+"peak_temp_c": 49.13,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.587,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger current": 0.035,
+"Na-plating guard": 0.483,
+"Thermal derate": 0.482
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.3,
+"temp_at_90_c": 44.82
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 16.57,
+"t90_min": 23.2,
+"peak_temp_c": 45.33,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.156,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.385,
+"Charger current": 0.034,
+"Na-plating guard": 0.581
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.4,
+"temp_at_90_c": 42.32
+},
+{
+"config": "precond",
+"switched": [
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 21.37,
+"t90_min": 28.43,
+"peak_temp_c": 42.0,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.227,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.482,
+"Charger current": 0.009,
+"Na-plating guard": 0.508
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.1,
+"temp_at_90_c": 39.73
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 19.13,
+"t90_min": 23.77,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.631,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.653,
+"Charger current": 0.007,
+"Na-plating guard": 0.34
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.5,
+"temp_at_90_c": 46.51
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.43,
+"t90_min": 19.4,
+"peak_temp_c": 50.48,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.536,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.192,
+"Charger current": 0.033,
+"Na-plating guard": 0.35,
+"Thermal derate": 0.425
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.8,
+"temp_at_90_c": 49.24
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 25.8,
+"peak_temp_c": 41.67,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.161,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.578,
+"Charger current": 0.004,
+"Na-plating guard": 0.418
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.6,
+"temp_at_90_c": 40.67
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 15.23,
+"t90_min": 20.07,
+"peak_temp_c": 44.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.076,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.499,
+"Charger current": 0.02,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.8,
+"temp_at_90_c": 43.88
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 17.33,
+"t90_min": 25.17,
+"peak_temp_c": 44.68,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.132,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.348,
+"Charger current": 0.032,
+"Na-plating guard": 0.62
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.3,
+"temp_at_90_c": 40.03
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.8,
+"t90_min": 23.2,
+"peak_temp_c": 50.98,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.483,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.377,
+"Charger current": 0.052,
+"Na-plating guard": 0.571
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.1,
+"temp_at_90_c": 44.87
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.93,
+"t90_min": 29.6,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.578,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.469,
+"Charger current": 0.013,
+"Na-plating guard": 0.517
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.3,
+"temp_at_90_c": 40.86
+},
+{
+"config": "thermal",
+"switched": [
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 22.3,
+"t90_min": 30.8,
+"peak_temp_c": 41.11,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.438,
+"Charger current": 0.009,
+"Na-plating guard": 0.554
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.9,
+"temp_at_90_c": 37.26
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.54,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.98,
+"aging_h25": 1.016,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.7,
+"temp_at_90_c": 43.54
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.39,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.68,
+"aging_h25": 0.859,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.3,
+"temp_at_90_c": 47.39
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.86,
+"peak_c_rate": 2.56,
+"min_anode_mv": 30.77,
+"aging_h25": 1.547,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.0,
+"temp_at_90_c": 48.86
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 16.47,
+"t90_min": 19.3,
+"peak_temp_c": 50.0,
+"peak_c_rate": 3.41,
+"min_anode_mv": 32.48,
+"aging_h25": 1.531,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.033,
+"Charger current": 0.033,
+"Thermal derate": 0.934
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 49.98
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 43.08,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.71,
+"aging_h25": 0.941,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.8,
+"temp_at_90_c": 43.08
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 17.27,
+"t90_min": 24.97,
+"peak_temp_c": 49.76,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.515,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.101,
+"Charger current": 0.048,
+"Na-plating guard": 0.551,
+"Thermal derate": 0.3
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.4,
+"temp_at_90_c": 43.5
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.17,
+"t90_min": 21.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 22.59,
+"aging_h25": 1.335,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.7,
+"temp_at_90_c": 47.4
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 16.37,
+"t90_min": 19.0,
+"peak_temp_c": 49.13,
+"peak_c_rate": 3.34,
+"min_anode_mv": 21.45,
+"aging_h25": 1.291,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger current": 0.046,
+"Thermal derate": 0.954
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.3,
+"temp_at_90_c": 48.84
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.93,
+"t90_min": 29.6,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.578,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.469,
+"Charger current": 0.013,
+"Na-plating guard": 0.517
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.0,
+"temp_at_90_c": 40.86
+},
+{
+"config": "margin+precond",
+"switched": [
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.35,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.804,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.728,
+"Charger current": 0.052,
+"Na-plating guard": 0.211,
+"Thermal derate": 0.009
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.1,
+"temp_at_90_c": 47.35
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 17.33,
+"t90_min": 25.17,
+"peak_temp_c": 44.68,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.132,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.348,
+"Charger current": 0.032,
+"Na-plating guard": 0.62
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.8,
+"temp_at_90_c": 40.03
+},
+{
+"config": "crate",
+"switched": [
+"crate"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 22.3,
+"t90_min": 30.8,
+"peak_temp_c": 41.11,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.438,
+"Charger current": 0.009,
+"Na-plating guard": 0.554
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.9,
+"temp_at_90_c": 37.26
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 46.73,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.47,
+"aging_h25": 0.825,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.2,
+"temp_at_90_c": 46.73
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.3,
+"t90_min": 21.17,
+"peak_temp_c": 42.64,
+"peak_c_rate": 2.56,
+"min_anode_mv": 20.73,
+"aging_h25": 0.964,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.8,
+"temp_at_90_c": 42.64
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 27.39,
+"aging_h25": 1.474,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.8,
+"temp_at_90_c": 47.94
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 46.73,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.47,
+"aging_h25": 0.825,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 46.73
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 27.39,
+"aging_h25": 1.474,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.0,
+"temp_at_90_c": 47.94
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 41.91,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.87,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.956,
+"Charger current": 0.013,
+"Na-plating guard": 0.031
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.3,
+"temp_at_90_c": 41.91
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.31,
+"aging_h25": 1.242,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.1,
+"temp_at_90_c": 46.19
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.17,
+"t90_min": 15.3,
+"peak_temp_c": 51.67,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 1.094,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.739,
+"Charger current": 0.078,
+"Na-plating guard": 0.167,
+"Thermal derate": 0.015
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.3,
+"temp_at_90_c": 51.67
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.47,
+"t90_min": 15.87,
+"peak_temp_c": 46.0,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.775,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.652,
+"Charger current": 0.05,
+"Na-plating guard": 0.298
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.2,
+"temp_at_90_c": 46.0
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 14.77,
+"t90_min": 17.37,
+"peak_temp_c": 50.61,
+"peak_c_rate": 3.41,
+"min_anode_mv": 29.19,
+"aging_h25": 1.396,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.215,
+"Charger current": 0.036,
+"Thermal derate": 0.749
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.8,
+"temp_at_90_c": 50.59
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 41.91,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.87,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.956,
+"Charger current": 0.013,
+"Na-plating guard": 0.031
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 41.91
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 14.7,
+"t90_min": 17.13,
+"peak_temp_c": 49.76,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.43,
+"aging_h25": 1.16,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.148,
+"Charger current": 0.07,
+"Thermal derate": 0.783
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.7,
+"temp_at_90_c": 49.52
+},
+{
+"config": "margin+thermal",
+"switched": [
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.13,
+"t90_min": 15.2,
+"peak_temp_c": 52.47,
+"peak_c_rate": 3.41,
+"min_anode_mv": 24.57,
+"aging_h25": 1.274,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.958,
+"Charger current": 0.042
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.6,
+"temp_at_90_c": 52.47
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 19.77,
+"t90_min": 24.83,
+"peak_temp_c": 42.45,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.189,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 5.0,
+"temp_at_90_c": 42.07
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.3,
+"t90_min": 21.17,
+"peak_temp_c": 42.64,
+"peak_c_rate": 2.56,
+"min_anode_mv": 20.73,
+"aging_h25": 0.964,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.0,
+"temp_at_90_c": 42.64
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 14.87,
+"t90_min": 19.2,
+"peak_temp_c": 45.55,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.083,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.53,
+"Charger current": 0.021,
+"Na-plating guard": 0.449
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.0,
+"temp_at_90_c": 45.11
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.31,
+"aging_h25": 1.242,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.0,
+"temp_at_90_c": 46.19
+},
+{
+"config": "margin+crate",
+"switched": [
+"crate",
+"margin"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.47,
+"t90_min": 15.87,
+"peak_temp_c": 46.0,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.775,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.652,
+"Charger current": 0.05,
+"Na-plating guard": 0.298
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.9,
+"temp_at_90_c": 46.0
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.8,
+"t90_min": 22.9,
+"peak_temp_c": 48.65,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.666,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.69,
+"Charger current": 0.007,
+"Na-plating guard": 0.302
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.8,
+"temp_at_90_c": 47.9
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 21.37,
+"t90_min": 28.43,
+"peak_temp_c": 42.0,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.227,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.482,
+"Charger current": 0.009,
+"Na-plating guard": 0.508
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.8,
+"temp_at_90_c": 39.73
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 27.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.617,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.523,
+"Charger current": 0.015,
+"Na-plating guard": 0.462
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.7,
+"temp_at_90_c": 43.7
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.23,
+"t90_min": 21.3,
+"peak_temp_c": 51.61,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.506,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.416,
+"Charger current": 0.058,
+"Na-plating guard": 0.527
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 6.6,
+"temp_at_90_c": 47.4
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.9,
+"t90_min": 17.27,
+"peak_temp_c": 52.17,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.491,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.607,
+"Charger current": 0.037,
+"Na-plating guard": 0.356
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.0,
+"temp_at_90_c": 51.6
+},
+{
+"config": "precond+thermal",
+"switched": [
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 16.57,
+"t90_min": 23.2,
+"peak_temp_c": 45.33,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.156,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.385,
+"Charger current": 0.034,
+"Na-plating guard": 0.581
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.9,
+"temp_at_90_c": 42.32
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 19.77,
+"t90_min": 24.83,
+"peak_temp_c": 42.45,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.189,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.4,
+"temp_at_90_c": 42.07
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.8,
+"t90_min": 22.9,
+"peak_temp_c": 48.65,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.666,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.69,
+"Charger current": 0.007,
+"Na-plating guard": 0.302
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.1,
+"temp_at_90_c": 47.9
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.7,
+"t90_min": 19.33,
+"peak_temp_c": 50.74,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.587,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.17,
+"Charger current": 0.033,
+"Na-plating guard": 0.312,
+"Thermal derate": 0.485
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.0,
+"temp_at_90_c": 50.08
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 14.87,
+"t90_min": 19.2,
+"peak_temp_c": 45.55,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.083,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.53,
+"Charger current": 0.021,
+"Na-plating guard": 0.449
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.2,
+"temp_at_90_c": 45.11
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 14.07,
+"t90_min": 17.73,
+"peak_temp_c": 51.6,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.464,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.585,
+"Charger current": 0.036,
+"Na-plating guard": 0.379
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.1,
+"temp_at_90_c": 50.52
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 19.13,
+"t90_min": 23.77,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.631,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.653,
+"Charger current": 0.007,
+"Na-plating guard": 0.34
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.6,
+"temp_at_90_c": 46.51
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 15.23,
+"t90_min": 20.07,
+"peak_temp_c": 44.94,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.076,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.499,
+"Charger current": 0.02,
+"Na-plating guard": 0.481
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.4,
+"temp_at_90_c": 43.88
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 17.07,
+"t90_min": 23.5,
+"peak_temp_c": 50.03,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.562,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.091,
+"Charger current": 0.052,
+"Na-plating guard": 0.496,
+"Thermal derate": 0.361
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.8,
+"temp_at_90_c": 45.72
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 27.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.617,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.523,
+"Charger current": 0.015,
+"Na-plating guard": 0.462
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.3,
+"temp_at_90_c": 43.7
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 21.37,
+"t90_min": 28.43,
+"peak_temp_c": 42.0,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.227,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.482,
+"Charger current": 0.009,
+"Na-plating guard": 0.508
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.6,
+"temp_at_90_c": 39.73
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.54,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.98,
+"aging_h25": 1.016,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.0,
+"temp_at_90_c": 43.54
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.86,
+"peak_c_rate": 2.56,
+"min_anode_mv": 30.77,
+"aging_h25": 1.547,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.9,
+"temp_at_90_c": 48.86
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.39,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.68,
+"aging_h25": 0.859,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 47.39
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.13,
+"t90_min": 15.37,
+"peak_temp_c": 53.0,
+"peak_c_rate": 3.41,
+"min_anode_mv": 27.35,
+"aging_h25": 1.338,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.773,
+"Charger current": 0.041,
+"Thermal derate": 0.186
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 53.0
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 25.8,
+"peak_temp_c": 41.67,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.161,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.578,
+"Charger current": 0.004,
+"Na-plating guard": 0.418
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 5.1,
+"temp_at_90_c": 40.67
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 43.08,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.71,
+"aging_h25": 0.941,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.2,
+"temp_at_90_c": 43.08
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 17.33,
+"t90_min": 25.17,
+"peak_temp_c": 44.68,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.132,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.348,
+"Charger current": 0.032,
+"Na-plating guard": 0.62
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.3,
+"temp_at_90_c": 40.03
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.93,
+"t90_min": 29.6,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.578,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.469,
+"Charger current": 0.013,
+"Na-plating guard": 0.517
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.1,
+"temp_at_90_c": 40.86
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 22.3,
+"t90_min": 30.8,
+"peak_temp_c": 41.11,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.188,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.438,
+"Charger current": 0.009,
+"Na-plating guard": 0.554
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.8,
+"temp_at_90_c": 37.26
+},
+{
+"config": "thermal+crate",
+"switched": [
+"crate",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.8,
+"t90_min": 23.2,
+"peak_temp_c": 50.98,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.483,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.377,
+"Charger current": 0.052,
+"Na-plating guard": 0.571
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.5,
+"temp_at_90_c": 44.87
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.17,
+"t90_min": 21.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 22.59,
+"aging_h25": 1.335,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.1,
+"temp_at_90_c": 47.4
+},
+{
+"config": "precond+crate",
+"switched": [
+"crate",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 16.57,
+"t90_min": 23.2,
+"peak_temp_c": 45.33,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.156,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.385,
+"Charger current": 0.034,
+"Na-plating guard": 0.581
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.6,
+"temp_at_90_c": 42.32
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.35,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.804,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.737,
+"Charger current": 0.052,
+"Na-plating guard": 0.211
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.5,
+"temp_at_90_c": 47.35
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.39,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.68,
+"aging_h25": 0.859,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.6,
+"temp_at_90_c": 47.39
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.86,
+"peak_c_rate": 2.56,
+"min_anode_mv": 30.77,
+"aging_h25": 1.547,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.0,
+"temp_at_90_c": 48.86
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.54,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.98,
+"aging_h25": 1.016,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.1,
+"temp_at_90_c": 43.54
+},
+{
+"config": "margin+precond+thermal",
+"switched": [
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.23,
+"t90_min": 15.5,
+"peak_temp_c": 52.25,
+"peak_c_rate": 3.34,
+"min_anode_mv": 20.22,
+"aging_h25": 1.173,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.616,
+"Charger current": 0.079,
+"Thermal derate": 0.305
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.2,
+"temp_at_90_c": 52.25
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.3,
+"t90_min": 18.07,
+"peak_temp_c": 50.87,
+"peak_c_rate": 3.41,
+"min_anode_mv": 33.08,
+"aging_h25": 1.494,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.182,
+"Charger current": 0.035,
+"Thermal derate": 0.783
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.7,
+"temp_at_90_c": 50.86
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 46.73,
+"peak_c_rate": 3.41,
+"min_anode_mv": 15.47,
+"aging_h25": 0.825,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.6,
+"temp_at_90_c": 46.73
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 43.08,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.71,
+"aging_h25": 0.941,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.0,
+"temp_at_90_c": 43.08
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.13,
+"t90_min": 15.2,
+"peak_temp_c": 52.47,
+"peak_c_rate": 3.41,
+"min_anode_mv": 24.57,
+"aging_h25": 1.274,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.958,
+"Charger current": 0.042
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.5,
+"temp_at_90_c": 52.47
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.3,
+"t90_min": 21.17,
+"peak_temp_c": 42.64,
+"peak_c_rate": 2.56,
+"min_anode_mv": 20.73,
+"aging_h25": 0.964,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.8,
+"temp_at_90_c": 42.64
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.17,
+"t90_min": 21.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 22.59,
+"aging_h25": 1.335,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.9,
+"temp_at_90_c": 47.4
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.04,
+"peak_c_rate": 2.56,
+"min_anode_mv": 27.39,
+"aging_h25": 1.474,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.1,
+"temp_at_90_c": 47.94
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.2,
+"t90_min": 17.77,
+"peak_temp_c": 50.03,
+"peak_c_rate": 3.34,
+"min_anode_mv": 21.31,
+"aging_h25": 1.262,
+"main_limiter": "Thermal derate",
+"limiter_share": {
+"Charger power": 0.12,
+"Charger current": 0.069,
+"Thermal derate": 0.811
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.5,
+"temp_at_90_c": 49.87
+},
+{
+"config": "margin+precond+crate",
+"switched": [
+"crate",
+"margin",
+"precond"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.35,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.804,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.737,
+"Charger current": 0.052,
+"Na-plating guard": 0.211
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.3,
+"temp_at_90_c": 47.35
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 47.33,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.31,
+"aging_h25": 1.242,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.4,
+"temp_at_90_c": 46.19
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.17,
+"t90_min": 15.3,
+"peak_temp_c": 51.67,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 1.094,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.75,
+"Charger current": 0.078,
+"Na-plating guard": 0.172
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.5,
+"temp_at_90_c": 51.67
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 41.91,
+"peak_c_rate": 2.51,
+"min_anode_mv": 15.0,
+"aging_h25": 0.87,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.956,
+"Charger current": 0.013,
+"Na-plating guard": 0.031
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.6,
+"temp_at_90_c": 41.91
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.9,
+"t90_min": 17.27,
+"peak_temp_c": 52.17,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.491,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.607,
+"Charger current": 0.037,
+"Na-plating guard": 0.356
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.3,
+"temp_at_90_c": 51.6
+},
+{
+"config": "margin+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.47,
+"t90_min": 15.87,
+"peak_temp_c": 46.0,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.775,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.652,
+"Charger current": 0.05,
+"Na-plating guard": 0.298
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.5,
+"temp_at_90_c": 46.0
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.8,
+"t90_min": 22.9,
+"peak_temp_c": 48.65,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.666,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.69,
+"Charger current": 0.007,
+"Na-plating guard": 0.302
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.3,
+"temp_at_90_c": 47.9
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 19.77,
+"t90_min": 24.83,
+"peak_temp_c": 42.45,
+"peak_c_rate": 2.56,
+"min_anode_mv": 40.0,
+"aging_h25": 1.189,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.609,
+"Charger current": 0.004,
+"Na-plating guard": 0.387
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 5.0,
+"temp_at_90_c": 42.07
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.17,
+"peak_temp_c": 43.54,
+"peak_c_rate": 2.56,
+"min_anode_mv": 23.98,
+"aging_h25": 1.016,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.995,
+"Charger current": 0.005
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.0,
+"temp_at_90_c": 43.54
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.2,
+"t90_min": 21.07,
+"peak_temp_c": 48.86,
+"peak_c_rate": 2.56,
+"min_anode_mv": 30.77,
+"aging_h25": 1.547,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.992,
+"Charger current": 0.008
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.1,
+"temp_at_90_c": 48.86
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 15.23,
+"t90_min": 21.3,
+"peak_temp_c": 51.61,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.506,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.416,
+"Charger current": 0.058,
+"Na-plating guard": 0.527
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 7.5,
+"temp_at_90_c": 47.4
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 20.2,
+"t90_min": 27.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.617,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.523,
+"Charger current": 0.015,
+"Na-plating guard": 0.462
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.2,
+"temp_at_90_c": 43.7
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 14.87,
+"t90_min": 19.2,
+"peak_temp_c": 45.55,
+"peak_c_rate": 3.41,
+"min_anode_mv": 40.0,
+"aging_h25": 1.083,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.53,
+"Charger current": 0.021,
+"Na-plating guard": 0.449
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 4.2,
+"temp_at_90_c": 45.11
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 16.57,
+"t90_min": 23.2,
+"peak_temp_c": 45.33,
+"peak_c_rate": 3.34,
+"min_anode_mv": 40.0,
+"aging_h25": 1.156,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.385,
+"Charger current": 0.034,
+"Na-plating guard": 0.581
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 8.9,
+"temp_at_90_c": 42.32
+},
+{
+"config": "precond+thermal+crate",
+"switched": [
+"crate",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 21.37,
+"t90_min": 28.43,
+"peak_temp_c": 42.0,
+"peak_c_rate": 2.51,
+"min_anode_mv": 40.0,
+"aging_h25": 1.227,
+"main_limiter": "Na-plating guard",
+"limiter_share": {
+"Charger power": 0.482,
+"Charger current": 0.009,
+"Na-plating guard": 0.508
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 9.6,
+"temp_at_90_c": 39.73
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.13,
+"t90_min": 15.2,
+"peak_temp_c": 52.64,
+"peak_c_rate": 3.34,
+"min_anode_mv": 17.41,
+"aging_h25": 1.154,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.919,
+"Charger current": 0.081
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.2,
+"temp_at_90_c": 52.64
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 18.17,
+"t90_min": 21.07,
+"peak_temp_c": 47.94,
+"peak_c_rate": 2.51,
+"min_anode_mv": 22.59,
+"aging_h25": 1.335,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.981,
+"Charger current": 0.019
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.0,
+"temp_at_90_c": 47.4
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.2,
+"t90_min": 15.27,
+"peak_temp_c": 47.39,
+"peak_c_rate": 3.41,
+"min_anode_mv": 18.68,
+"aging_h25": 0.859,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.974,
+"Charger current": 0.026
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.4,
+"temp_at_90_c": 47.39
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "350 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 13.27,
+"t90_min": 15.43,
+"peak_temp_c": 47.35,
+"peak_c_rate": 3.34,
+"min_anode_mv": 15.0,
+"aging_h25": 0.804,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.737,
+"Charger current": 0.052,
+"Na-plating guard": 0.211
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 3.4,
+"temp_at_90_c": 47.35
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "blade",
+"charger": "350 kW DC",
+"ambient_c": 45,
+"precondition": false,
+"t80_min": 13.13,
+"t90_min": 15.2,
+"peak_temp_c": 53.15,
+"peak_c_rate": 3.41,
+"min_anode_mv": 26.75,
+"aging_h25": 1.323,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.958,
+"Charger current": 0.042
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 1.4,
+"temp_at_90_c": 53.15
+},
+{
+"config": "margin+precond+thermal+crate",
+"switched": [
+"crate",
+"margin",
+"precond",
+"thermal"
+],
+"arch": "module",
+"charger": "250 kW DC",
+"ambient_c": 35,
+"precondition": false,
+"t80_min": 18.27,
+"t90_min": 21.13,
+"peak_temp_c": 43.08,
+"peak_c_rate": 2.51,
+"min_anode_mv": 18.71,
+"aging_h25": 0.941,
+"main_limiter": "Charger power",
+"limiter_share": {
+"Charger power": 0.987,
+"Charger current": 0.013
+},
+"margin_held": true,
+"below_cutoff": true,
+"runtime_s": 2.4,
+"temp_at_90_c": 43.08
+}
+]
