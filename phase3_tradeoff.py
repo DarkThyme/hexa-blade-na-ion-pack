@@ -2,7 +2,7 @@
 Phase 3 trade-off: how hot should the pack be to charge 10 -> 90% fast, and what does it cost in aging?
 
 Sweeps the pack preconditioning / coolant temperature for the anode-aware BMS (15 mV margin) and
-reports time to 80/85/90% and the SEI aging index (equivalent hours at 25 C) for each charger.
+reports time to 80/85/90% and the modelled SEI exposure index (equivalent hours at 25 C) for each charger.
 
 Run:  .venv/Scripts/python phase3_tradeoff.py
 """
@@ -58,7 +58,7 @@ def main():
         axes[1].scatter([std["sei_aging_h25"]], [std["t90"]], marker="s", color=color)
     axes[0].set_xlabel("Pack preconditioning temperature [°C]")
     axes[0].set_ylabel("10 → 90% time [min]")
-    axes[1].set_xlabel("SEI aging index per session [equiv. h at 25 °C]")
+    axes[1].set_xlabel("Modelled SEI exposure index per session [equiv. h at 25 °C]")
     axes[1].set_ylabel("10 → 90% time [min]")
     axes[0].legend(fontsize=8)
     axes[1].legend(fontsize=8)

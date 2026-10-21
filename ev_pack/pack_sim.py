@@ -11,7 +11,7 @@ Na-plating guard (anode >= margin vs Na at every cell), voltage limit (CV), ther
 
 Two BMS strategies are compared:
   standard   typical modern EV: 40 mV plating margin, preconditioned / held near 30 C
-  optimized  model-based anode observer: 15 mV margin, preconditioned to 35 C (the sweet spot found by
+  optimized  ideal-information control (reads the modelled anode potential directly): 15 mV margin, preconditioned to 35 C (the sweet spot found by
              phase3_tradeoff.py: hotter adds aging but almost no speed once the charger is the limit)
 """
 
@@ -26,7 +26,7 @@ from .spec import CHARGERS, ChargerSpec
 
 R_GAS = 8.314
 SOC_LO, SOC_HI = 0.03, 0.96          # usable window inside the electrode window (bottom / top buffer)
-EA_SEI = 55_000.0                     # SEI growth activation energy (aging index only)
+EA_SEI = 55_000.0                     # SEI growth activation energy (SEI exposure index only)
 ETA_TAU_S = 15.0
 # Calibrated against EVBattery fleet data (analysis/evbattery): resistances outside the electrochemistry
 # (tabs, welds, busbars, fuse, contactors) and cell-to-cell non-uniformity.

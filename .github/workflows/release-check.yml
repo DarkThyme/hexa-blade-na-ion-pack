@@ -1,0 +1,53 @@
+# Release verification, kept apart from the development test suite. Two separate checks:
+#  1. historical experiment audit: the archived v1.0 frozen artifacts (analysis/estimator/frozen_v1.0/) against the
+#     original, never-edited freeze_manifest.json
+#  2. release integrity: the release's artifacts against its own release_manifest_<version>.json
+# Each fails (exit 1) on any mismatch or missing file.
+name: release-check
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  historical-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install numpy (all the checker imports)
+        run: python -m pip install numpy
+      - name: Audit archived frozen artifacts against the original manifest
+        working-directory: analysis/estimator
+        run: python freeze.py verify
+
+  release-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pick the release manifest
+        id: pick
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then
+            m="release_manifest_${GITHUB_REF_NAME}.json"
+          else
+            # on main: only when this commit adds or changes a release manifest (i.e. it is a release commit)
+            m=$(git diff --name-only HEAD~1 HEAD -- 'release_manifest_*.json' | sort -V | tail -1)
+          fi
+          echo "manifest=$m" >> "$GITHUB_OUTPUT"
+          echo "manifest: ${m:-none (not a release commit)}"
+      - name: Verify release artifacts against their manifest
+        if: steps.pick.outputs.manifest != ''
+        run: python release_integrity.py verify "${{ steps.pick.outputs.manifest }}"

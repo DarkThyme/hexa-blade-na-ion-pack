@@ -6,6 +6,7 @@ Run:  .venv/Scripts/python analysis/estimator/report.py
 
 import collections
 import json
+import statistics
 
 import matplotlib
 
@@ -31,20 +32,31 @@ def summarise(rows):
         by.setdefault(r["controller"], []).append(r)
     out = []
     for ctl, rs in by.items():
-        done = [r for r in rs if r["completed"]]
-        t = sorted(r["t90_min"] for r in done)
+        # completion is the Boolean field written by closed_loop.py; unfinished runs (time limit, stalled, solver
+        # failure) carry t90_min = None and never enter the median
+        done = [r for r in rs if r["completed"] is True]
+        t = [r["t90_min"] for r in done]
         out.append({"controller": ctl, "n": len(rs), "done": len(done),
                     "runs_below15": sum(r["below_15mv_s"] > 0 for r in rs), "runs_below0": sum(r["below_0mv_s"] > 0 for r in rs),
                     "max_below0_min": max(r["below_0mv_s"] for r in rs) / 60, "worst_mv": min(r["true_min_anode_mv"] for r in rs),
                     "opt_p99": max((r["opt_err_p99_near_mv"] or 0) for r in rs),
-                    "t90_median": t[len(t) // 2] if t else None,
+                    # median among completed runs (mean of the two middle values for an even count); None if none completed
+                    "t90_median": statistics.median(t) if t else None,
                     "time_limit": sum(r["status"] == "time limit" for r in rs), "stalled": sum(r["status"] == "stalled" for r in rs),
                     "solver_failed": sum(r["status"].startswith("plant solver") for r in rs)})
     return out
 
 
+METRIC_NOTES = ["Completed: N/M runs reached 90 %; the 10→90 % time is the median among completed runs only (for an even count, "
+                "the mean of the two middle runs).",
+                "Max. time below 0 mV: Maximum estimated cumulative duration below 0 mV, based on two-second endpoint samples.",
+                "Max. p99 optimistic error: Maximum across per-run p99 optimistic errors (estimate − DFN truth, while the true "
+                "anode is below 50 mV)."]
+
+
 def table(summary):
-    L = ["| Controller | Reached 90 % | Runs below 15 mV | Runs below 0 mV | Longest below 0 mV | Worst modelled anode | Optimistic error p99 near limit | Median 10→90 % |",
+    L = ["| Controller | Completed: N/M; median among completed runs | Incomplete runs | Runs below 15 mV | Runs below 0 mV | "
+         "Max. time below 0 mV | Worst modelled anode | Max. p99 optimistic error |",
          "|---|---|---|---|---|---|---|---|"]
     for s in summary:
         notes = []
@@ -54,11 +66,10 @@ def table(summary):
             notes.append(f"{s['stalled']} stalled")
         if s["solver_failed"]:
             notes.append(f"{s['solver_failed']} plant solver failure")
-        done = f"{s['done']}/{s['n']}" + (f" ({', '.join(notes)})" if notes else "")
         med = "—" if s["t90_median"] is None else f"{s['t90_median']:.0f} min"
-        L.append(f"| {s['controller']} | {done} | {s['runs_below15']} | {s['runs_below0']} | {s['max_below0_min']:.1f} min | "
-                 f"{s['worst_mv']:.1f} mV | {s['opt_p99']:.1f} mV | {med} |")
-    return L
+        L.append(f"| {s['controller']} | {s['done']}/{s['n']}; {med} | {', '.join(notes) or '—'} | {s['runs_below15']} | "
+                 f"{s['runs_below0']} | {s['max_below0_min']:.1f} min | {s['worst_mv']:.1f} mV | {s['opt_p99']:.1f} mV |")
+    return L + [""] + [f"- {x}" for x in METRIC_NOTES]
 
 
 def openloop_rows():
@@ -87,13 +98,13 @@ def figures(dev, final):
     ax[0].bar(xs - 0.2, [ol[t]["test"]["p99"] for t in ("v1", "A", "B")], 0.38, color=SERIES[0], label="open loop (recorded sessions)")
     ax[0].bar(xs + 0.2, [cl[t]["opt_p99"] for t in ("v1", "A", "B")], 0.38, color=SERIES[1], label="closed loop (own controller)")
     ax[0].set_xticks(xs, ["v1", "A: horizon fix", "B: + rollouts"])
-    ax[0].set_ylabel("optimistic error p99 near the limit, mV")
+    ax[0].set_ylabel("p99 optimistic error near the limit, mV\n(closed loop: max across per-run p99)")
     ax[0].set_title("Network: open-loop accuracy did not predict closed loop", loc="left", fontsize=10.5)
     ax[0].legend(fontsize=8, frameon=False)
     vals = [cl[t]["runs_below0"] for t in ("v1", "A", "B")]
     ax[1].bar(xs, vals, 0.5, color=SERIES[7])
     for x, t, n in zip(xs, ("v1", "A", "B"), vals):
-        ax[1].text(x, n + 0.3, f"longest {cl[t]['max_below0_min']:.1f} min", ha="center", fontsize=8.5, color=INK2)
+        ax[1].text(x, n + 0.3, f"max cumulative {cl[t]['max_below0_min']:.1f} min", ha="center", fontsize=8.5, color=INK2)
     ax[1].set_xticks(xs, ["v1", "A: horizon fix", "B: + rollouts"])
     ax[1].set_ylabel("runs below 0 mV (of 14)")
     ax[1].set_ylim(0, 15)
@@ -192,7 +203,10 @@ def main():
           "## 3. Final confirmation on a frozen, untouched family", "",
           f"Before any final-family run existed, `freeze_manifest.json` recorded SHA-256 hashes of all three network "
           f"versions, their calibration files and the scripts, the controllers and margins, the cases and the stopping "
-          f"rules (frozen {man['frozen_at']}). Check at report time: **{'unchanged' if ok else 'CHANGED, results not valid as a frozen test'}**.", ""]
+          f"rules (frozen {man['frozen_at']}). Historical audit at report time (archived copies in `frozen_v1.0/` against the "
+          f"original manifest): **{'all files match' if ok else 'FAILED, results not valid as a frozen test'}**. The archived "
+          "`closed_loop.py` was reconstructed after a documented post-freeze edit; its bytes match the frozen hash exactly "
+          "(see `PROVENANCE_LOG.md`).", ""]
     L += table(final)
     L += ["", "![final family](fig_final.png)", ""]
     s = {x["controller"]: x for x in final}
@@ -203,21 +217,22 @@ def main():
     mp = s["map, 15 mV"]
     L += ["### Reading the final family", "",
           f"- **Network v1 (frozen, open-loop trained):** {v1['runs_below0']} of {v1['n']} runs below 0 mV, worst "
-          f"{v1['worst_mv']:.0f} mV, closed-loop optimistic p99 {v1['opt_p99']:.0f} mV.",
+          f"{v1['worst_mv']:.0f} mV, max per-run p99 optimistic error {v1['opt_p99']:.0f} mV.",
           f"- **Network B (frozen, aggregated):** {b['runs_below0']} of {b['n']} runs below 0 mV, worst {b['worst_mv']:.0f} mV, "
-          f"longest {b['max_below0_min']:.1f} min, p99 {b['opt_p99']:.0f} mV; reached 90 % in {b['done']} of {b['n']}.",
+          f"max cumulative {b['max_below0_min']:.1f} min below 0 mV, max per-run p99 optimistic error {b['opt_p99']:.0f} mV; "
+          f"reached 90 % in {b['done']} of {b['n']}.",
           f"- **Standard map at 40 mV:** {std['runs_below0']} of {std['n']} below 0 mV, worst {std['worst_mv']:.0f} mV; "
           f"reached 90 % in {std['done']}. **Map at 15 mV (the pack BMS method):** {mp['runs_below0']} below 0 mV, worst "
           f"{mp['worst_mv']:.0f} mV.",
-          f"- **Oracle feedback reference:** {orc['runs_below0']} below 0 mV, reached 90 % in {orc['done']}, median "
-          f"{'—' if orc['t90_median'] is None else f'{orc['t90_median']:.0f} min'}.",
+          f"- **Oracle feedback reference:** {orc['runs_below0']} below 0 mV; completed: {orc['done']}/{orc['n']}; median among "
+          f"completed runs {'—' if orc['t90_median'] is None else f'{orc['t90_median']:.0f} min'}.",
           "", "### Verdict", "",
           "**Not yet.** No measurement-only estimator recovered charging performance while holding the declared target on "
           "the frozen family. Closed-loop aggregation (B) removed most of the severity (worst crossing "
-          f"{v1['worst_mv']:.0f} → {b['worst_mv']:.0f} mV, longest {v1['max_below0_min']:.0f} → {b['max_below0_min']:.1f} min) and "
+          f"{v1['worst_mv']:.0f} → {b['worst_mv']:.0f} mV, max cumulative time below 0 mV {v1['max_below0_min']:.0f} → {b['max_below0_min']:.1f} min) and "
           f"completed every run, but {b['runs_below0']} of {b['n']} runs still crossed 0 mV briefly: its margin, calibrated on "
           f"training-cell rollouts (p99 {json.loads((H / 'openloop_B.json').read_text())['estimators']['ml']['calibration']['p99']:.1f} mV), "
-          f"underestimated the tail on unseen cells (p99 {b['opt_p99']:.0f} mV). The calibrated observer was the only "
+          f"underestimated the tail on unseen cells (max per-run p99 {b['opt_p99']:.0f} mV). The calibrated observer was the only "
           "measurement-only controller that held both 15 mV and 0 mV here, at a much longer charge. A conservative "
           "map margin is safe but stalls. The protection–speed trade-off is set by how well the estimator's error tail "
           "transfers to unseen cells.", "",

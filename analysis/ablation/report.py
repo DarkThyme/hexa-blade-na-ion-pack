@@ -135,7 +135,7 @@ def main():
          "below 4C.",
          f"- The price is heat: the hottest cell reaches {full_hot[0]['peak_temp_c']:.1f} / {full_hot[1]['peak_temp_c']:.1f} °C "
          f"(blade / module) with the relaxed limits against {std_hot[0]['peak_temp_c']:.1f} / {std_hot[1]['peak_temp_c']:.1f} °C. "
-         f"The SEI aging index is still lower ({full_hot[0]['aging_h25']:.2f} vs {std_hot[0]['aging_h25']:.2f} for the blade) "
+         f"The modelled SEI exposure index is still lower ({full_hot[0]['aging_h25']:.2f} vs {std_hot[0]['aging_h25']:.2f} for the blade) "
          "because the session is shorter.",
          "- At 250 kW the same 45 °C start generates less heat and the thermal limits again contribute 0.", "",
          "**The settings interact.** The margin alone saves more when switched on first than it costs when switched "

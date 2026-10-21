@@ -31,16 +31,20 @@ Open loop (predicting along recorded sessions), the network looked far better th
 
 ### Development holdout, v1 (all controllers)
 
-| Controller | Reached 90 % | Runs below 15 mV | Runs below 0 mV | Longest below 0 mV | Worst modelled anode | Optimistic error p99 near limit | Median 10→90 % |
+| Controller | Completed: N/M; median among completed runs | Incomplete runs | Runs below 15 mV | Runs below 0 mV | Max. time below 0 mV | Worst modelled anode | Max. p99 optimistic error |
 |---|---|---|---|---|---|---|---|
-| map, 15 mV | 14/14 | 10 | 9 | 77.9 min | -34.2 mV | 49.6 mV | 81 min |
-| map, calibrated 54 mV | 0/14 (7 time limit, 7 stalled) | 6 | 0 | 0.0 min | 4.1 mV | 49.8 mV | — |
-| oracle feedback (reference) | 10/14 (4 time limit) | 14 | 0 | 0.0 min | 9.7 mV | 10.8 mV | 71 min |
-| observer, 15 mV | 14/14 | 10 | 8 | 21.7 min | -23.2 mV | 35.2 mV | 61 min |
-| standard map, 40 mV | 7/14 (6 time limit, 1 plant solver failure) | 8 | 8 | 5.2 min | -10.2 mV | 48.8 mV | 84 min |
-| observer, calibrated 47 mV | 3/14 (11 time limit) | 8 | 0 | 0.0 min | 3.2 mV | 42.9 mV | 93 min |
-| ml, calibrated 24 mV | 10/14 (2 time limit, 2 plant solver failure) | 14 | 11 | 22.9 min | -130.4 mV | 162.9 mV | 62 min |
-| ml, 15 mV | 13/14 (1 plant solver failure) | 14 | 14 | 24.3 min | -135.3 mV | 155.4 mV | 70 min |
+| map, 15 mV | 14/14; 61 min | — | 10 | 9 | 77.9 min | -34.2 mV | 49.6 mV |
+| map, calibrated 54 mV | 0/14; — | 7 time limit, 7 stalled | 6 | 0 | 0.0 min | 4.1 mV | 49.8 mV |
+| oracle feedback (reference) | 10/14; 60 min | 4 time limit | 14 | 0 | 0.0 min | 9.7 mV | 10.8 mV |
+| observer, 15 mV | 14/14; 57 min | — | 10 | 8 | 21.7 min | -23.2 mV | 35.2 mV |
+| standard map, 40 mV | 7/14; 84 min | 6 time limit, 1 plant solver failure | 8 | 8 | 5.2 min | -10.2 mV | 48.8 mV |
+| observer, calibrated 47 mV | 3/14; 93 min | 11 time limit | 8 | 0 | 0.0 min | 3.2 mV | 42.9 mV |
+| ml, calibrated 24 mV | 10/14; 59 min | 2 time limit, 2 plant solver failure | 14 | 11 | 22.9 min | -130.4 mV | 162.9 mV |
+| ml, 15 mV | 13/14; 70 min | 1 plant solver failure | 14 | 14 | 24.3 min | -135.3 mV | 155.4 mV |
+
+- Completed: N/M runs reached 90 %; the 10→90 % time is the median among completed runs only (for an even count, the mean of the two middle runs).
+- Max. time below 0 mV: Maximum estimated cumulative duration below 0 mV, based on two-second endpoint samples.
+- Max. p99 optimistic error: Maximum across per-run p99 optimistic errors (estimate − DFN truth, while the true anode is below 50 mV).
 
 ## 2. Two candidate causes, isolated one at a time
 
@@ -49,14 +53,18 @@ Open loop (predicting along recorded sessions), the network looked far better th
 
 ### Development holdout, network versions (14 runs each)
 
-| Controller | Reached 90 % | Runs below 15 mV | Runs below 0 mV | Longest below 0 mV | Worst modelled anode | Optimistic error p99 near limit | Median 10→90 % |
+| Controller | Completed: N/M; median among completed runs | Incomplete runs | Runs below 15 mV | Runs below 0 mV | Max. time below 0 mV | Worst modelled anode | Max. p99 optimistic error |
 |---|---|---|---|---|---|---|---|
-| ml, calibrated 24 mV | 10/14 (2 time limit, 2 plant solver failure) | 14 | 11 | 22.9 min | -130.4 mV | 162.9 mV | 62 min |
-| ml, 15 mV | 13/14 (1 plant solver failure) | 14 | 14 | 24.3 min | -135.3 mV | 155.4 mV | 70 min |
-| ml A, 15 mV | 12/14 (2 plant solver failure) | 14 | 12 | 3.7 min | -56.6 mV | 45.2 mV | 68 min |
-| ml A, calibrated 24 mV | 10/14 (2 time limit, 2 plant solver failure) | 13 | 11 | 2.1 min | -50.3 mV | 40.7 mV | 86 min |
-| ml B, 15 mV | 10/14 (2 time limit, 2 plant solver failure) | 14 | 4 | 2.0 min | -14.7 mV | 18.8 mV | 74 min |
-| ml B, calibrated 20 mV | 10/14 (4 time limit) | 11 | 4 | 1.4 min | -10.1 mV | 20.3 mV | 83 min |
+| ml, calibrated 24 mV | 10/14; 59 min | 2 time limit, 2 plant solver failure | 14 | 11 | 22.9 min | -130.4 mV | 162.9 mV |
+| ml, 15 mV | 13/14; 70 min | 1 plant solver failure | 14 | 14 | 24.3 min | -135.3 mV | 155.4 mV |
+| ml A, 15 mV | 12/14; 68 min | 2 plant solver failure | 14 | 12 | 3.7 min | -56.6 mV | 45.2 mV |
+| ml A, calibrated 24 mV | 10/14; 71 min | 2 time limit, 2 plant solver failure | 13 | 11 | 2.1 min | -50.3 mV | 40.7 mV |
+| ml B, 15 mV | 10/14; 61 min | 2 time limit, 2 plant solver failure | 14 | 4 | 2.0 min | -14.7 mV | 18.8 mV |
+| ml B, calibrated 20 mV | 10/14; 68 min | 4 time limit | 11 | 4 | 1.4 min | -10.1 mV | 20.3 mV |
+
+- Completed: N/M runs reached 90 %; the 10→90 % time is the median among completed runs only (for an even count, the mean of the two middle runs).
+- Max. time below 0 mV: Maximum estimated cumulative duration below 0 mV, based on two-second endpoint samples.
+- Max. p99 optimistic error: Maximum across per-run p99 optimistic errors (estimate − DFN truth, while the true anode is below 50 mV).
 
 ![open loop vs closed loop](fig_openloop_vs_closedloop.png)
 
@@ -64,32 +72,36 @@ Fix A shrank the closed-loop optimistic tail and the depth and duration of cross
 
 ## 3. Final confirmation on a frozen, untouched family
 
-Before any final-family run existed, `freeze_manifest.json` recorded SHA-256 hashes of all three network versions, their calibration files and the scripts, the controllers and margins, the cases and the stopping rules (frozen 2026-10-21 00:59:27). Check at report time: **unchanged**.
+Before any final-family run existed, `freeze_manifest.json` recorded SHA-256 hashes of all three network versions, their calibration files and the scripts, the controllers and margins, the cases and the stopping rules (frozen 2026-10-21 00:59:27). Historical audit at report time (archived copies in `frozen_v1.0/` against the original manifest): **all files match**. The archived `closed_loop.py` was reconstructed after a documented post-freeze edit; its bytes match the frozen hash exactly (see `PROVENANCE_LOG.md`).
 
-| Controller | Reached 90 % | Runs below 15 mV | Runs below 0 mV | Longest below 0 mV | Worst modelled anode | Optimistic error p99 near limit | Median 10→90 % |
+| Controller | Completed: N/M; median among completed runs | Incomplete runs | Runs below 15 mV | Runs below 0 mV | Max. time below 0 mV | Worst modelled anode | Max. p99 optimistic error |
 |---|---|---|---|---|---|---|---|
-| map, 15 mV | 16/16 | 10 | 8 | 19.4 min | -16.4 mV | 31.6 mV | 81 min |
-| map, calibrated 56 mV | 0/16 (16 stalled) | 0 | 0 | 0.0 min | 25.1 mV | 31.3 mV | — |
-| oracle feedback (reference) | 15/16 (1 plant solver failure) | 16 | 0 | 0.0 min | 10.6 mV | 3.1 mV | 65 min |
-| ml B, calibrated 20 mV | 16/16 | 15 | 8 | 0.7 min | -8.2 mV | 22.6 mV | 87 min |
-| ml A, calibrated 24 mV | 14/16 (2 plant solver failure) | 16 | 16 | 2.3 min | -39.3 mV | 36.1 mV | 71 min |
-| standard map, 40 mV | 8/16 (8 time limit) | 6 | 0 | 0.0 min | 8.9 mV | 30.1 mV | 127 min |
-| observer, calibrated 40 mV | 12/16 (4 time limit) | 0 | 0 | 0.0 min | 21.9 mV | 18.1 mV | 139 min |
-| ml v1, calibrated 24 mV | 16/16 | 16 | 16 | 24.2 min | -120.3 mV | 145.8 mV | 101 min |
-| ml B, 15 mV | 16/16 | 16 | 8 | 0.8 min | -8.8 mV | 21.8 mV | 79 min |
+| map, 15 mV | 16/16; 70 min | — | 10 | 8 | 19.4 min | -16.4 mV | 31.6 mV |
+| map, calibrated 56 mV | 0/16; — | 16 stalled | 0 | 0 | 0.0 min | 25.1 mV | 31.3 mV |
+| oracle feedback (reference) | 15/16; 65 min | 1 plant solver failure | 16 | 0 | 0.0 min | 10.6 mV | 3.1 mV |
+| ml B, calibrated 20 mV | 16/16; 78 min | — | 15 | 8 | 0.7 min | -8.2 mV | 22.6 mV |
+| ml A, calibrated 24 mV | 14/16; 71 min | 2 plant solver failure | 16 | 16 | 2.3 min | -39.3 mV | 36.1 mV |
+| standard map, 40 mV | 8/16; 127 min | 8 time limit | 6 | 0 | 0.0 min | 8.9 mV | 30.1 mV |
+| observer, calibrated 40 mV | 12/16; 139 min | 4 time limit | 0 | 0 | 0.0 min | 21.9 mV | 18.1 mV |
+| ml v1, calibrated 24 mV | 16/16; 70 min | — | 16 | 16 | 24.2 min | -120.3 mV | 145.8 mV |
+| ml B, 15 mV | 16/16; 70 min | — | 16 | 8 | 0.8 min | -8.8 mV | 21.8 mV |
+
+- Completed: N/M runs reached 90 %; the 10→90 % time is the median among completed runs only (for an even count, the mean of the two middle runs).
+- Max. time below 0 mV: Maximum estimated cumulative duration below 0 mV, based on two-second endpoint samples.
+- Max. p99 optimistic error: Maximum across per-run p99 optimistic errors (estimate − DFN truth, while the true anode is below 50 mV).
 
 ![final family](fig_final.png)
 
 ### Reading the final family
 
-- **Network v1 (frozen, open-loop trained):** 16 of 16 runs below 0 mV, worst -120 mV, closed-loop optimistic p99 146 mV.
-- **Network B (frozen, aggregated):** 8 of 16 runs below 0 mV, worst -8 mV, longest 0.7 min, p99 23 mV; reached 90 % in 16 of 16.
+- **Network v1 (frozen, open-loop trained):** 16 of 16 runs below 0 mV, worst -120 mV, max per-run p99 optimistic error 146 mV.
+- **Network B (frozen, aggregated):** 8 of 16 runs below 0 mV, worst -8 mV, max cumulative 0.7 min below 0 mV, max per-run p99 optimistic error 23 mV; reached 90 % in 16 of 16.
 - **Standard map at 40 mV:** 0 of 16 below 0 mV, worst 9 mV; reached 90 % in 8. **Map at 15 mV (the pack BMS method):** 8 below 0 mV, worst -16 mV.
-- **Oracle feedback reference:** 0 below 0 mV, reached 90 % in 15, median 65 min.
+- **Oracle feedback reference:** 0 below 0 mV; completed: 15/16; median among completed runs 65 min.
 
 ### Verdict
 
-**Not yet.** No measurement-only estimator recovered charging performance while holding the declared target on the frozen family. Closed-loop aggregation (B) removed most of the severity (worst crossing -120 → -8 mV, longest 24 → 0.7 min) and completed every run, but 8 of 16 runs still crossed 0 mV briefly: its margin, calibrated on training-cell rollouts (p99 4.9 mV), underestimated the tail on unseen cells (p99 23 mV). The calibrated observer was the only measurement-only controller that held both 15 mV and 0 mV here, at a much longer charge. A conservative map margin is safe but stalls. The protection–speed trade-off is set by how well the estimator's error tail transfers to unseen cells.
+**Not yet.** No measurement-only estimator recovered charging performance while holding the declared target on the frozen family. Closed-loop aggregation (B) removed most of the severity (worst crossing -120 → -8 mV, max cumulative time below 0 mV 24 → 0.7 min) and completed every run, but 8 of 16 runs still crossed 0 mV briefly: its margin, calibrated on training-cell rollouts (p99 4.9 mV), underestimated the tail on unseen cells (max per-run p99 23 mV). The calibrated observer was the only measurement-only controller that held both 15 mV and 0 mV here, at a much longer charge. A conservative map margin is safe but stalls. The protection–speed trade-off is set by how well the estimator's error tail transfers to unseen cells.
 
 ## What this establishes and what it doesn't
 

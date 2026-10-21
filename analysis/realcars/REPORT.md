@@ -47,7 +47,7 @@ The anode-aware strategy (15 mV margin, pack at 35 °C) holds about 2.9C to 92�
   - cell-to-cell spread;
   - warranty conservatism (8 years / 160,000 km).
 
-  This is the most likely reason real cars taper at 50–60%. Treat 15–17 min to 90% as a **best case for a new cell with an accurate observer**, and about 22 min (standard BMS) as the conservative, real-world-validated figure.
+  This is the most likely reason real cars taper at 50–60%. Treat 15–17 min to 90% as an **ideal-information best case for a new cell** (direct access to the modelled anode potential), and about 22 min (standard BMS) as the conservative figure, consistent with real 800 V cars' published charging curves.
 
 *Numbers updated for the enlarged cells (blade 64 mm, 204s1p; module 58 mm, 200s4p, October 2026). The conclusions did not change.*
 

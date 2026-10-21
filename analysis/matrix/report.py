@@ -233,7 +233,7 @@ def main():
     L += md_table("t90_min", fmt_t, "Time 10 % → 90 %")
     L += md_table("t80_min", fmt_t, "Time 10 % → 80 %")
     L += md_table("peak_temp_c", lambda v: f"{v:.1f}", "Hottest cell, °C")
-    L += md_table("aging_h25", lambda v: f"{v:.2f}", "SEI aging index (equivalent hours at 25 °C; lower is better)")
+    L += md_table("aging_h25", lambda v: f"{v:.2f}", "Modelled SEI exposure index (equivalent hours at 25 °C; lower is better)")
     L += ["#### Peak power and main limiter, every session", "",
           "| Pack | BMS | Charger | Ambient | Precond. | 10→80 | 10→90 | Peak kW | Avg kW | Hottest °C | Min anode mV | Max V | Energy kWh | Aging | Main limiter |",
           "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]

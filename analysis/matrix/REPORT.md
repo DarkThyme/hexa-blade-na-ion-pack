@@ -199,7 +199,7 @@ Format: **preconditioned / cold-soaked**. Times in minutes, or `h mm` above 100 
 | 250 kW DC | 42.6 / 31.0 | 42.6 / 31.8 | 42.7 / 33.1 | 42.8 / 34.8 | 43.0 / 39.0 | 43.1 / 43.1 | 43.2 / 47.9 |
 | 350 kW DC | 46.9 / 31.3 | 47.0 / 32.5 | 47.0 / 33.8 | 47.1 / 35.8 | 47.3 / 42.2 | 47.4 / 47.4 | 47.4 / 52.6 |
 
-#### SEI aging index (equivalent hours at 25 °C; lower is better)
+#### Modelled SEI exposure index (equivalent hours at 25 °C; lower is better)
 
 **Hex-Blade (cell-to-pack) · Standard BMS** (preconditioned / cold-soaked)
 

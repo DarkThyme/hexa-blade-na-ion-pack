@@ -333,7 +333,7 @@ fn live_section(ui: &mut egui::Ui, view: &ViewState, pb: &Playback, store: &Stor
             ui.label(RichText::new(fmt_min(t90)).size(30.0).strong().color(ACCENT));
         }
         ui.label(RichText::new(format!(
-            "peak {:.0} kW  ·  hottest {:.1} °C  ·  aging index {:.2}",
+            "peak {:.0} kW  ·  hottest {:.1} °C  ·  SEI exposure {:.2}",
             sc.summary_f32("peak_power_kw").unwrap_or(0.0),
             sc.summary_f32("peak_temp_c").unwrap_or(0.0),
             sc.summary_f32("sei_aging_h25").unwrap_or(0.0)

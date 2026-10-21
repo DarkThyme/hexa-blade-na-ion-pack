@@ -22,7 +22,7 @@ Attribution uses **Shapley values**: each setting's marginal saving, averaged ov
 
 **Hot exception: 350 kW, hot-soaked at 45 °C.** Here the standard BMS spends 59 % (blade) and 42 % (module) of the session on its thermal derate, and the attribution shifts: blade 20.9 → 15.2 min: margin 36 %, thermal limits 51 %, C-rate cap 13 %, temperature settings 0 %; module 26.5 → 15.2 min: margin 62 %, thermal limits 25 %, C-rate cap 7 %, temperature settings 6 %.
 - The C-rate cap matters here only through the derate: in the simulator the derated limit is (derate fraction) × (max C-rate), so a 5C cap raises the derated current too, even though peak current stays below 4C.
-- The price is heat: the hottest cell reaches 53.1 / 52.6 °C (blade / module) with the relaxed limits against 49.6 / 48.8 °C. The SEI aging index is still lower (1.32 vs 1.58 for the blade) because the session is shorter.
+- The price is heat: the hottest cell reaches 53.1 / 52.6 °C (blade / module) with the relaxed limits against 49.6 / 48.8 °C. The modelled SEI exposure index is still lower (1.32 vs 1.58 for the blade) because the session is shorter.
 - At 250 kW the same 45 °C start generates less heat and the thermal limits again contribute 0.
 
 **The settings interact.** The margin alone saves more when switched on first than it costs when switched off last (blade, 350 kW, 25 °C: 5.9 vs 4.0 min). Warmer cells and a smaller margin both relax the same plating limit, so their effects overlap rather than add.

@@ -8,6 +8,16 @@ modelled plating-risk criterion, and how much of that speed survives once the ba
 work from imperfect measurements. Everything here is **simulation only**: the reference model is PyBaMM's sodium-ion
 Doyle–Fuller–Newman (DFN) model, a higher-fidelity simulation reference, not experimental truth.
 
+**What the project demonstrates.** Its strongest result is not a charging time. It is an auditable, transparent
+demonstration of how estimator error causes an advanced BMS strategy to produce violations of selected modelled
+constraints on unseen parameter cases. With ideal information, an anode-aware BMS charges the blade pack from 10 to 90 % about 6 minutes faster than a standard one at 350 kW (15.3 vs 21.4 min). When the
+modelled anode potential has to be *estimated* from voltage, current and temperature, estimators that looked accurate
+open loop drove the modelled anode below the plating-risk criterion in closed loop on cells they had not seen. Fixing
+the two isolated causes shrank the violations but did not remove them. Every step can be audited: the controller,
+plant and evaluator are separated (diagram below), the final test family was hashed in a freeze manifest before it
+was simulated, failed versions are kept, and [PROVENANCE_LOG.md](PROVENANCE_LOG.md) records every post-release
+correction.
+
 What is in the repository:
 
 | Part | Where | What it does |
@@ -18,6 +28,7 @@ What is in the repository:
 | 3D viewer | `viewer/` (Rust + Bevy → WebAssembly) | Glass car body over the pack; every cell fills with green liquid as its SOC rises, or is coloured by temperature |
 | Charging Lab | `app.py` (Python, NiceGUI) | Local interactive app: charger, ambient, preconditioning, live charts |
 | Report | `docs/` | Word / PDF write-up with every key value and the references; rebuilt by `docs/report_builder/` |
+| Provenance | `PROVENANCE_LOG.md`, `release_integrity.py`, `analysis/estimator/freeze.py` | Changes between releases; two CI checks in `.github/workflows/release-check.yml`: a historical audit (archived v1.0 frozen artifacts vs the original manifest) and release integrity (this release vs `release_manifest_v1.0.1.json`) |
 
 Headline results (details and caveats in the phase sections below):
 - **350 kW, 25 °C, 10 → 90 %:** about 21 min with a standard BMS (in line with the best real 800 V cars) and
@@ -26,6 +37,29 @@ Headline results (details and caveats in the phase sections below):
 - **Where the gain comes from (Phase 9):** 81–95 % from the smaller plating margin (40 → 15 mV), the rest from warmer preconditioning.
 - **With imperfect information (Phases 11–12):** errors in the anode estimate eat most of the gain in cold, plating-limited charging.
   No measurement-only estimator tested here held the 15 mV target on unseen cells while keeping the speed-up; the verdict is "not yet".
+
+### How the closed loop is isolated
+
+In the stress test and estimator study the BMS is split into three parts. The estimator and controller form the
+feedback loop and see only what a real BMS could measure. The plant holds the hidden reference state. The evaluator
+reads that hidden state to score each run and feeds nothing back into the loop.
+
+```mermaid
+flowchart LR
+  subgraph loop["Estimator–controller feedback loop (measurements only)"]
+    E["Estimator<br/>map · observer · ML"] -->|"predicted end-of-step anode potential<br/>for every candidate current"| C["Controller<br/>highest candidate current with<br/>estimate ≥ margin and V ≤ 4.3 V"]
+  end
+  C -->|"current command, held 2 s"| P["Plant<br/>full sodium-ion DFN<br/>(hidden reference state)"]
+  P -->|"measured V, I, T<br/>+ declared initial SOC"| E
+  P -.->|"hidden state: true anode potential, true SOC"| V["Evaluator<br/>below 15 mV / below 0 mV,<br/>time to 90 %, optimistic error"]
+  V --> L[("run logs")]
+```
+
+- Each candidate current is fed to the estimator explicitly. The candidate's terminal voltage comes from the
+  estimator's own model and is never read from the DFN before the decision.
+- The evaluator never corrects the controller. A run that goes below 0 mV keeps going, and the crossing is recorded.
+- The only exception is the *oracle feedback* reference controller, which is given the true previous anode potential.
+  It is reported as an upper reference, not as a measurement-only BMS.
 
 ## Quick start
 
@@ -180,13 +214,13 @@ This is how real BMS charge maps are derived.
 
 **BMS strategies (`ev_pack/pack_sim.py`).**
 - *standard*: a typical modern EV. 40 mV plating margin, preconditioned to 30 °C.
-- *optimized*: a model-based anode observer with a 15 mV margin, preconditioned to 35 °C.
+- *optimized* (anode-aware): **ideal-information control**. It reads the modelled anode potential of every cell directly (no estimation error or delay) and holds a 15 mV margin, preconditioned to 35 °C. Phases 11–12 test what happens when that information has to be estimated.
 
-The plating margin is enforced exactly on every cell, every step. An SEI aging index (equivalent hours at 25 °C) makes the cost of heat visible.
+The plating margin is enforced exactly on every cell, every step. A modelled SEI exposure index (equivalent hours at 25 °C of the main SEI-growth reaction; not a cycle-life prediction) makes the cost of heat visible.
 
 **Result (350 kW, 25 °C; calibrated model, see Phase 5):**
 
-| Pack | BMS | 10→80% | 10→85% | 10→90% | Hottest cell | Aging index |
+| Pack | BMS | 10→80% | 10→85% | 10→90% | Hottest cell | SEI exposure index |
 |---|---|---|---|---|---|---|
 | Blade | Standard | 16.0 min | 18.7 min | 21.4 min | 41.8 °C | 0.94 |
 | Blade | **Anode-aware, 35 °C** | **13.2 min** | **14.2 min** | **15.3 min** | 47.4 °C | **0.86** |
@@ -214,7 +248,7 @@ Key real-world facts:
 See [analysis/realcars/REPORT.md](analysis/realcars/REPORT.md). The real curves are digitized Fastned / InsideEVs charging curves from Morin et al. 2025 (Figshare, **CC BY 4.0**). They cover the Taycan, e-tron GT, Ioniq 5 / 6, EV6 and Macan Electric.
 
 - **Standard BMS ≈ real cars.** On a 300 kW charger the blade pack takes 16.8 min for 10→80% and 21.7 min for 10→90%. The best real 800 V cars take 15.2–17.2 and 20.9–29 min.
-- **Anode-aware BMS:** 16.8 min for 10→90%, about 4 min faster than any real car. The result holds even with 30× slower hard-carbon plateau diffusion. The Phase 9 ablation shows 81–95% of its advantage comes from the 15 mV plating margin and the rest from a warmer pack (except in a 45 °C hot-soak at 350 kW, where relaxed thermal limits also matter); a production BMS would have to hold that margin across aging, sensor error and cell spread. Treat it as a best case; the real-world-validated figure is about 22 min.
+- **Anode-aware BMS:** 16.8 min for 10→90%, about 4 min faster than any real car. The result holds even with 30× slower hard-carbon plateau diffusion. The Phase 9 ablation shows 81–95% of its advantage comes from the 15 mV plating margin and the rest from a warmer pack (except in a 45 °C hot-soak at 350 kW, where relaxed thermal limits also matter); a production BMS would have to hold that margin across aging, sensor error and cell spread. Treat it as an ideal-information best case; the standard-BMS figure, about 22 min, is the one consistent with real 800 V cars' published charging curves.
 
 ## Phase 6 — 3D showcase (Rust + Bevy → WebAssembly)
 
@@ -287,14 +321,16 @@ What this establishes: a controller–plant–evaluator benchmark that quantifie
 ## Phase 12 — Measurement-only anode-potential estimators
 
 See [analysis/estimator/REPORT.md](analysis/estimator/REPORT.md). Question: can an estimator that sees only voltage, current, temperature and the declared initial SOC recover charging performance in cold, plating-limited conditions while holding the modelled 15 mV target? Ground truth is the full DFN (a higher-fidelity simulation reference, not experiment) on cells that differ from the nominal design; 20 training, 7 development-holdout, and a frozen final family of 8 unseen interior parameter cases at 5 °C and 0 °C.
-- **Open-loop accuracy did not predict closed-loop safety.** The network (v1) was 10 mV p99 accurate on recorded sessions but 163 mV optimistic in closed loop, letting the modelled anode stay below the plating-risk criterion for up to 24 min.
+- **Open-loop accuracy did not predict closed-loop safety.** The network (v1) was 10 mV p99 accurate on recorded sessions but 163 mV optimistic in closed loop, letting the modelled anode stay below the plating-risk criterion for a maximum estimated cumulative 24 min (two-second endpoint samples).
 - **Two causes, isolated:** a decision-horizon mismatch in the training data (fix A: step-aligned data) and training coverage (fix B: DAgger-inspired closed-loop data aggregation on training cells only).
-- **Frozen final family:** B cut the worst crossing from −120 to −8 mV and the longest from 24 to 0.7 min and completed every run, but 8 of 16 runs still crossed 0 mV briefly; its training-calibrated margin underestimated the tail on unseen cells (5 vs 23 mV p99). Only the calibrated observer held both 15 mV and 0 mV, at a 139 min median. **Verdict: not yet**: the protection–speed trade-off is set by how well the estimator's error tail transfers to unseen cells.
-- v1, A and B and every rollout are preserved; the final family was simulated only after `freeze_manifest.json` hashed every model, calibration and script (verified unchanged at report time).
+- **Frozen final family:** B cut the worst crossing from −120 to −8 mV and the maximum cumulative time below 0 mV from 24 to 0.7 min and completed every run, but 8 of 16 runs still crossed 0 mV briefly; its training-calibrated margin underestimated the tail on unseen cells (calibration p99 5 mV vs a maximum across per-run p99 optimistic errors of 23 mV). Only the calibrated observer held both 15 mV and 0 mV, but slowly (completed: 12/16; median among completed runs 139 min). **Verdict: not yet**: the protection–speed trade-off is set by how well the estimator's error tail transfers to unseen cells.
+- v1, A and B and every rollout are preserved; the final family was simulated only after `freeze_manifest.json` hashed every model, calibration and script. v1.0 shipped a post-freeze edit to `closed_loop.py`, and git had normalised the frozen CRLF line endings. v1.0.1 archives the exact frozen bytes in `analysis/estimator/frozen_v1.0/` (`closed_loop.py` reconstructed, hash-identical) and audits them against the unchanged original manifest; the corrected release is checked separately against `release_manifest_v1.0.1.json`. Details and the corrected medians are in [PROVENANCE_LOG.md](PROVENANCE_LOG.md).
 
 ## Roadmap
+- Optional next bounded experiment, after feedback on v1.0.1: a reduced-order next-interval anode-potential predictor,
+  single-cell only. Partitions, go/no-go gate and the final closed-loop evaluation are fixed in [analysis/predictor/PROTOCOL.md](analysis/predictor/PROTOCOL.md).
 - Model predictive control (MPC) or RL that adjusts current live from predicted temperature and anode potential.
-- Aging model beyond the SEI index (plating-free cycle-life validation), and model-based imbalance detection for the flat Na-ion OCV.
+- Aging model beyond the modelled SEI exposure index (plating-free cycle-life validation), and model-based imbalance detection for the flat Na-ion OCV.
 - Optional: ESP32 + INA226 + NTC hardware rig on a single protected cell.
 
 ## Data sources and licences
@@ -313,7 +349,7 @@ accepts only numpy data types.
 
 If you use this project, please cite it as:
 
-> Dariya, N. (2026). *HEXA-BLADE: fast-charging a sodium-ion 110 kWh, 800 V EV pack (simulation study)*, v1.0.
+> Dariya, N. (2026). *HEXA-BLADE: fast-charging a sodium-ion 110 kWh, 800 V EV pack (simulation study)*, v1.0.1.
 > https://github.com/DarkThyme/hexa-blade-na-ion-pack
 
 Models, data and methods this work builds on:

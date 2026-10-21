@@ -170,11 +170,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--preset", default=None, help="A_dev | rollout | B_dev | final (default: the v1 run)")
-    ap.add_argument("--out", default="v1/closed_loop.jsonl")
+    ap.add_argument("--out", default="closed_loop.jsonl")
     a = ap.parse_args()
     if a.preset is None:
-        ol = json.loads((C.HERE / "v1" / "openloop.json").read_text())
-        jobs = [(lab, kind, mg, tuple(combo), T, ol["best_tau"], str(C.HERE / "v1" / "ml_model.pkl"))
+        ol = json.loads((C.HERE / "openloop.json").read_text())
+        jobs = [(lab, kind, mg, tuple(combo), T, ol["best_tau"], str(C.HERE / "ml_model.pkl"))
                 for combo in C.HELD_OUT for T in (0.0, 10.0) for lab, kind, mg in controllers(ol)]
     else:
         cases = {"A_dev": [(c, T) for c in C.HELD_OUT for T in (0.0, 10.0)],
